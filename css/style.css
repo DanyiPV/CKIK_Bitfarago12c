@@ -1,0 +1,58 @@
+body{
+    background-color: rgb(29, 29, 29);
+}
+
+.container{
+    width: 50vw;
+    height: 20vw;
+    position: relative;
+    border: 2px solid white;
+    margin: auto;
+    display: flex;
+    transition: .6s;
+    margin-top: 15vw;
+    justify-content: space-around;
+    border-radius: .7vw;
+}
+
+.RolunkDiv, .FilmekDiv{
+    position: absolute;
+    transition: .7s;
+    top: 7.2vw;
+    translate: -7vw;
+}
+
+.RolunkDiv input, .FilmekDiv input{
+    position: relative;
+    background-color: rgba(36, 36, 36, 0.6);
+    color: white;
+    border: 2px solid white;
+    border-radius: .6vw;
+    height: 6vw;
+    width: 14vw;
+    font-size: 1.7vw;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    cursor: pointer;
+    transition: .7s;
+}
+
+.RolunkDiv input:hover{
+    width: 17vw;
+    translate: -1.8vw;
+    background-color: rgba(77, 77, 77, 0.7);
+    letter-spacing: .25em;
+    border-radius: .3vw;
+    color: lime;
+    box-shadow: 0 0 10px 0 lime inset, 0 0 10px 2px lime;
+}
+
+.FilmekDiv input:hover{
+    width: 17vw;
+    translate: -1.8vw;
+    background-color: rgba(77, 77, 77, 0.7);
+    letter-spacing: .25em;
+    border-radius: .3vw;
+    color: red;
+    box-shadow: 0 0 10px 0 red inset, 0 0 10px 2px red;
+}
