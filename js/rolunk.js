@@ -23,10 +23,21 @@ function TimeLoop(){
 }
 //---
 
+//Bemutatkozás
 function Bemutatkozas(num){
-    document.getElementById('Bemutatkozas').classList.add("Megjelen");
-    document.getElementById('BlackBackground').classList.add('BackMegjelen')
+    document.getElementById('Bemutatkozas').classList = "Bemutatkozas Megjelen";
+    document.getElementById('BlackBackground').classList = 'BlackBackground BackMegjelen';
 }
+function Bezar(){
+    document.getElementById('Bemutatkozas').classList = "Bemutatkozas Megjelen Eluntet";
+    setTimeout(BezarEluntet,700);
+    document.getElementById('BlackBackground').classList = 'BlackBackground BackMegjelen BackEluntet';
+}
+function BezarEluntet(){
+    document.getElementById('Bemutatkozas').classList = "Bemutatkozas";
+}
+//---
+
 
 function Main(){
     Ora = setInterval(TimeLoop,1000);
