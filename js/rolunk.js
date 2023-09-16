@@ -1,13 +1,13 @@
 var Ora;
 var Bemutatkozasok = [{
     nev: "Kósik János",
-    img: "img src",
-    szoveg: ""},{
-    nev: "Orosz ádám",
-    img: "img src",
-    szoveg: ""},{
+    img: "Photos/random1.jpg",
+    szoveg: "Jani szöveges cuccai"},{
+    nev: "Orosz Ádám",
+    img: "Photos/random1.jpg",
+    szoveg: "Ádám szöveges cuccai"},{
     nev: "Pintea Dániel",
-    img: "img src",
+    img: "Photos/random1.jpg",
     szoveg: ""}
 ];
 
@@ -25,14 +25,33 @@ function TimeLoop(){
 
 //Bemutatkozás
 function Bemutatkozas(num){
-    document.getElementById('Bemutatkozas').classList = "Bemutatkozas Megjelen";
+    document.getElementById('CloseButtonDiv').innerHTML = "<p>"+Bemutatkozasok[num].nev+"</p>";
+    document.getElementById('BemutatkozasIMG').src = Bemutatkozasok[num].img;
+    document.getElementById('BemutatkozasP').innerHTML = "<p>"+Bemutatkozasok[num].szoveg+"</p>";
     document.getElementById('BlackBackground').classList = 'BlackBackground BackMegjelen';
+    document.getElementById('Bemutatkozas').classList = "Bemutatkozas BemutatkozasMegjelen";
+    setTimeout(TobbiMegjelenites,1000);
 }
+
+function TobbiMegjelenites(){
+    document.getElementById('CloseButton').classList = "CloseButton Megjelenites";
+    document.getElementById('BemutatkozasIMG').classList = "BemutatkozasIMG Megjelenites";
+    document.getElementById('BemutatkozasP').classList = "BemutatkozasP Megjelenites";
+}
+
 function Bezar(){
-    document.getElementById('Bemutatkozas').classList = "Bemutatkozas Megjelen Eluntet";
+    document.getElementById('CloseButton').classList = "CloseButton Eltuntetes";
+    document.getElementById('BemutatkozasIMG').classList = "BemutatkozasIMG Eltuntetes";
+    document.getElementById('BemutatkozasP').classList = "BemutatkozasP Eltuntetes";
+    setTimeout(MindenEltuntet,1000);
+}
+
+function MindenEltuntet(){
+    document.getElementById('Bemutatkozas').classList = "Bemutatkozas Megjelen BemutatkozasEluntet";
     setTimeout(BezarEluntet,700);
     document.getElementById('BlackBackground').classList = 'BlackBackground BackMegjelen BackEluntet';
 }
+
 function BezarEluntet(){
     document.getElementById('Bemutatkozas').classList = "Bemutatkozas";
 }

@@ -8,21 +8,28 @@
 </head>
 <body>
     <div class="Bemutatkozas" id="Bemutatkozas">
-        <div id="CloseButton" onclick="Bezar()"><img src="Photos/close.png" alt="close.png"></div>
+        <div class="CloseButton" id="CloseButton">
+            <div id="CloseButtonDiv"></div>
+            <img src="Photos/close.png" alt="close.png" onclick="Bezar()">
+        </div>
+        <div class="BemutatkozasDiv" id="BemutatkozasDiv">
+            <img id="BemutatkozasIMG" class="BemutatkozasIMG" src="Photos/random1.jpg" alt="">
+            <div id="BemutatkozasP" class="BemutatkozasP"></div>
+        </div>
     </div>
     <div id="ora"></div>
     <div class="HarmunkDiv">
         <div class="JaniDiv">
             <img src="Photos/random.jpg" alt="">
-            <input type="button" value="Kósik János" id="JaniButton" onclick="Bemutatkozas('1')">
+            <input type="button" value="Kósik János" id="JaniButton" onclick="Bemutatkozas('0')">
         </div>
         <div class="AdamDiv">
             <img src="Photos/random.jpg" alt="">
-            <input type="button" value="Orosz Ádám" id="AdamButton" onclick="Bemutatkozas('2')">
+            <input type="button" value="Orosz Ádám" id="AdamButton" onclick="Bemutatkozas('1')">
         </div>
         <div class="DaniDiv">
             <img src="Photos/random.jpg" alt="">
-            <input type="button" value="Pintea Dániel" id="AdamButton" onclick="Bemutatkozas('3')">
+            <input type="button" value="Pintea Dániel" id="AdamButton" onclick="Bemutatkozas('2')">
         </div>
     </div>
     <div class="Iskola">
