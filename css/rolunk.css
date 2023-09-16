@@ -1,5 +1,6 @@
 body{
     background-color: gray;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 #ora{
@@ -27,6 +28,7 @@ body{
     cursor: default;
 }
 
+/*---------Bemutatkozás---------*/
 .BlackBackground{
     background-color: rgba(0, 0, 0, 0.6);
     opacity: 0;
@@ -150,6 +152,7 @@ body{
 
 .JaniDiv img, .AdamDiv img, .DaniDiv img{
     width: 22vw;
+    height: 28vw;
     display: block;
     border-radius: .4vw;
     margin-left: auto;
@@ -158,8 +161,8 @@ body{
 }
 
 .JaniDiv input, .AdamDiv input, .DaniDiv input{
-    width: 8vw;
-    height: 3vw;
+    width: 12vw;
+    height: 5.5vw;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -168,14 +171,16 @@ body{
     color: white;
     cursor: pointer;
     transition: .6s;
-    font-size: 1vw;
+    font-size: 1.5vw;
+    letter-spacing: 0.1em;
     margin-top: 7vw;
     border-top: 0;
     border-bottom: 0;
 }
 
 .JaniDiv input:hover{
-    width: 10vw;
+    width: 16vw;
+    letter-spacing: 0.15em;
     border-radius: .6vw 1.5vw .6vw 1.5vw;
     border-top: 2px solid white;
     border-bottom: 2px solid white;
@@ -185,7 +190,8 @@ body{
 }
 
 .AdamDiv input:hover{
-    width: 10vw;
+    width: 16vw;
+    letter-spacing: 0.15em;
     border-radius: .6vw 1.5vw .6vw 1.5vw;
     border-top: 2px solid white;
     border-bottom: 2px solid white;
@@ -195,7 +201,8 @@ body{
 }
 
 .DaniDiv input:hover{
-    width: 10vw;
+    width: 16vw;
+    letter-spacing: 0.15em;
     border-radius: .6vw 1.5vw .6vw 1.5vw;
     border-top: 2px solid white;
     border-bottom: 2px solid white;
@@ -238,3 +245,18 @@ body{
     font-family:'digital-clock-font';
     src: url('digital-7.ttf');
 }
+/*---------Bemutatkozás---------*/
+
+/*---------Iskola---------*/
+.Iskola{
+    width: 97vw;
+    height: 48vw;
+    border: 2px solid white;
+    margin: auto;
+    margin-top: .9vw;
+    border-radius: .5vw;
+}
+
+
+
+/*---------Iskola---------*/

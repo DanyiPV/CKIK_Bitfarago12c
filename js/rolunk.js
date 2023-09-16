@@ -8,7 +8,7 @@ var Bemutatkozasok = [{
     szoveg: "Ádám szöveges cuccai"},{
     nev: "Pintea Dániel",
     img: "Photos/random1.jpg",
-    szoveg: ""}
+    szoveg: "Saját szöveges cuccaim"}
 ];
 
 //ora
