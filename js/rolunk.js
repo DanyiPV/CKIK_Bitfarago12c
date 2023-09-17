@@ -1,4 +1,6 @@
 var Ora;
+var CurrentPicIndex = 0;
+var PicSRC = ["ckik.jfif","ckik1.JPG","ckik2.JPG","ckik3.jpg","ckik4.jpg","ckik5.jpg","ckik6.jpg"];
 var Bemutatkozasok = [{
     nev: "Kósik János",
     img: "Photos/random1.jpg",
@@ -54,6 +56,53 @@ function MindenEltuntet(){
 
 function BezarEluntet(){
     document.getElementById('Bemutatkozas').classList = "Bemutatkozas";
+    document.getElementById('BlackBackground').classList = 'BlackBackground';
+}
+//---
+
+//Iskola
+function PreviousPic(){
+    if(CurrentPicIndex-1 < 0){
+        CurrentPicIndex = PicSRC.length-1;
+    }
+    else{
+        CurrentPicIndex--;
+    }
+    document.getElementById('CurrentPic').src = "Photos/"+PicSRC[CurrentPicIndex];
+    if(CurrentPicIndex-1 < 0){
+        document.getElementById('PreviousPic').src = "Photos/"+PicSRC[PicSRC.length-1];
+    }
+    else{
+        document.getElementById('PreviousPic').src = "Photos/"+PicSRC[CurrentPicIndex-1];
+    }
+    if(CurrentPicIndex+1 > PicSRC.length-1){
+        document.getElementById('NextPic').src = "Photos/"+PicSRC[0];
+    }
+    else{
+        document.getElementById('NextPic').src = "Photos/"+PicSRC[CurrentPicIndex+1];
+    }
+}
+
+function NextPic(){
+    if(CurrentPicIndex+1 > PicSRC.length-1){
+        CurrentPicIndex = 0;
+    }
+    else{
+        CurrentPicIndex++;
+    }
+    document.getElementById('CurrentPic').src = "Photos/"+PicSRC[CurrentPicIndex];
+    if(CurrentPicIndex-1 < 0){
+        document.getElementById('PreviousPic').src = "Photos/"+PicSRC[PicSRC.length-1];
+    }
+    else{
+        document.getElementById('PreviousPic').src = "Photos/"+PicSRC[CurrentPicIndex-1];
+    }
+    if(CurrentPicIndex+1 > PicSRC.length-1){
+        document.getElementById('NextPic').src = "Photos/"+PicSRC[0];
+    }
+    else{
+        document.getElementById('NextPic').src = "Photos/"+PicSRC[CurrentPicIndex+1];
+    }
 }
 //---
 

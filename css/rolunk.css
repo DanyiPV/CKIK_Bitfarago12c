@@ -23,9 +23,46 @@ body{
     padding: 0;
     position: absolute;
     bottom: -1.5vw;
-    right: .7vw;
+    right: 1vw;
     font-size: 2vw;
     cursor: default;
+}
+
+#VisszaButton{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(0, 68, 255, 0.6);
+    border-top-right-radius: 4vw;
+    color: white;
+    height: 3.5vw;
+    width: 6vw;
+    border: 2px solid white;
+    border-bottom: 0;
+    border-left: 0;
+    z-index: 100;
+}
+
+#VisszaButton input{
+    margin-top: 1vw;
+    margin-left: .5vw;
+    height: 2vw;
+    width: 4vw;
+    background-color: transparent;
+    border: 0;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    cursor: pointer;
+    transition: .6s;
+    border-radius: .4vw;
+    text-decoration: underline rgba(255, 255, 255, 0);
+}
+
+#VisszaButton input:hover{
+    background-color: rgba(255, 255, 255, 0.4);
+    letter-spacing: 0.2em;
+    text-decoration: underline white;
 }
 
 /*---------Bemutatkozás---------*/
@@ -231,16 +268,6 @@ body{
     to{opacity: 0; z-index: -1;}
 }
 
-@keyframes Megjelenites{
-    from{opacity: 0;}
-    to{opacity: 1;}
-}
-
-@keyframes Eltuntetes{
-    from{opacity: 1;}
-    to{opacity: 0;}
-}
-
 @font-face{
     font-family:'digital-clock-font';
     src: url('digital-7.ttf');
@@ -250,13 +277,130 @@ body{
 /*---------Iskola---------*/
 .Iskola{
     width: 97vw;
-    height: 48vw;
+    height: auto;
     border: 2px solid white;
     margin: auto;
     margin-top: .9vw;
     border-radius: .5vw;
 }
 
+.Iskola h1{
+    text-align: center;
+    margin: .6vw 0;
+    letter-spacing: 0.15em;
+    color: white;
+    font-size: 2.2vw;
+    text-decoration: underline;
+}
+
+.IskolaContainer{
+    display: flex;
+}
+
+.BelsoIskolaDiv{
+    width: 80vw;
+    height: 40vw;
+    margin: auto;
+    margin-top: -5vw;
+    display: flex;
+}
+
+.BelsoIskolaDiv input{
+    height: 2vw;
+    width: 6vw;
+    margin: auto;
+}
+
+.Pictures{
+    display: flex;
+    margin: auto;
+}
+
+.Pictures div{
+    height: 20vw;
+    width: 25vw;
+    margin: auto;
+}
+
+.PreviousPic{
+    transform: rotate3d(0, -2, 0, 30deg);
+    margin-right: -4vw !important;
+}
+
+.PreviousPic img{
+    transform: rotate3d(0, -2, 0, 30deg);
+    width: 80%;
+    margin-top: 3vw;
+    border: 2px solid black;
+    opacity: .6;
+}
+
+.NextPic{
+    transform: rotate3d(0, 2, 0, 30deg);
+}
+
+.NextPic img{
+    transform: rotate3d(0, 2, 0, 30deg);
+    width: 80%;
+    margin-top: 3vw;
+    border: 2px solid black;
+    opacity: .6;
+}
+
+.CurrentPic img{
+    width: 100%;
+    margin-top: 1.5vw;
+    border: 2px solid black;
+}
+
+#ElozoButton, #KovetkezoButton{
+    position: absolute;
+    top: 67vw;
+    width: 9vw;
+    height: 3vw;
+    margin: auto;
+    border-radius: .1vw;
+    cursor: pointer;
+    color: white;
+    background-color: rgba(0, 0, 0, 0);
+    transition: .8s;
+    font-size: .9vw;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    border: 0;
+    border-left: 2px solid white;
+    border-right: 2px solid white;
+}
+
+#ElozoButton:hover, #KovetkezoButton:hover{
+   width: 11vw;
+   background-color: rgba(0, 0, 0, 0.5);
+   border: 2px solid white;
+   border-radius: .4vw;
+   box-shadow: 0 0 10px 0 cyan inset, 0 0 10px 2px cyan;
+   letter-spacing: 0.4em;
+}
+
+#ElozoButton{
+    margin-left: .8vw;
+    margin-right: -3vw !important;
+}
+
+#KovetkezoButton{
+    margin-right: .8vw;
+    margin-left: -3vw !important;
+    right: 1vw;
+}
 
 
 /*---------Iskola---------*/
+
+@keyframes Megjelenites{
+    from{opacity: 0;}
+    to{opacity: 1;}
+}
+
+@keyframes Eltuntetes{
+    from{opacity: 1;}
+    to{opacity: 0;}
+}
