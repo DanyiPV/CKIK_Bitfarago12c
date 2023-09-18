@@ -3,56 +3,60 @@ body{
 }
 
 .container{
-    width: 50vw;
-    height: 20vw;
-    position: relative;
-    border: 2px solid white;
-    margin: auto;
     display: flex;
-    transition: .6s;
-    margin-top: 15vw;
+    margin: auto;
+    width: 60vw;
+    height: 25vw;
+    border: 2px solid white;
+    margin-top: 11vw;
+    transition: .8s;
     justify-content: space-around;
-    border-radius: .7vw;
+    border-radius: .4vw;
 }
 
 .RolunkDiv, .FilmekDiv{
-    position: absolute;
-    transition: .7s;
-    top: 7.2vw;
-    translate: -7vw;
+    margin-top: 10vw;
+    width: 15vw;
+    transition: .8s;
 }
 
-.RolunkDiv input, .FilmekDiv input{
-    position: relative;
-    background-color: rgba(36, 36, 36, 0.6);
+.RolunkDiv{
+    float: left;
+}
+
+.FilmekDiv{
+    float: right;
+}
+
+.RolunkDivButton input, .FilmekDivButton input{
+    width: 10vw;
+    height: 4vw;
+    cursor: pointer;
+    border-radius: .4vw;
     color: white;
+    background-color: rgb(29, 29, 29);
     border: 2px solid white;
-    border-radius: .6vw;
-    height: 6vw;
-    width: 14vw;
-    font-size: 1.7vw;
     text-transform: uppercase;
     letter-spacing: 0.1em;
-    cursor: pointer;
-    transition: .7s;
+    transition: .8s;
+    font-size: 1.2vw;
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.RolunkDiv input:hover{
-    width: 17vw;
-    translate: -1.8vw;
-    background-color: rgba(77, 77, 77, 0.7);
-    letter-spacing: .25em;
-    border-radius: .3vw;
-    color: lime;
-    box-shadow: 0 0 10px 0 lime inset, 0 0 10px 2px lime;
+.RolunkDivButton input:hover, .FilmekDivButton input:hover{
+    width: 15vw;
+    border-radius: .8vw;
+    letter-spacing: 0.2em;
 }
 
-.FilmekDiv input:hover{
-    width: 17vw;
-    translate: -1.8vw;
-    background-color: rgba(77, 77, 77, 0.7);
-    letter-spacing: .25em;
-    border-radius: .3vw;
-    color: red;
-    box-shadow: 0 0 10px 0 red inset, 0 0 10px 2px red;
+.RolunkDivIMG, .FilmekDivIMG{
+    text-align: center;
+    color: white;
+}
+
+.RolunkDivButton:hover + .FilmekDivIMG{
+    margin-top: -2vw;
 }
