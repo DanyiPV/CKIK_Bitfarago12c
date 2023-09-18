@@ -1,6 +1,7 @@
 var Ora;
 var CurrentPicIndex = 0;
 var PicSRC = ["ckik.jfif","ckik1.JPG","ckik2.JPG","ckik3.jpg","ckik4.jpg","ckik5.jpg","ckik6.jpg"];
+var Days = ["MON","TUE","WED","TRU","FRI","SAT","SUN"];
 var Bemutatkozasok = [{
     nev: "Kósik János",
     img: "Photos/random1.jpg",
@@ -16,12 +17,13 @@ var Bemutatkozasok = [{
 //ora
 function TimeLoop(){
     var now = new Date();
+    var day = now.getDay();
     var hours = now.getHours();
     var minutes = now.getMinutes();
     if(minutes.toString().length == 1){
         minutes = '0'+minutes;
     }
-    document.getElementById('ora').innerHTML = "<p>"+hours+":"+minutes+"</p>";
+    document.getElementById('ora').innerHTML = "<p>"+Days[day]+" - "+hours+":"+minutes+"</p>";
 }
 //---
 
