@@ -1,5 +1,5 @@
 body{
-    background-color: rgb(29, 29, 29);
+    background-color: rgb(59, 59, 59);
 }
 
 .container{
@@ -28,13 +28,17 @@ body{
     float: right;
 }
 
+.RolunkDivButton, .FilmekDivButton{
+    transition: .6s;
+}
+
 .RolunkDivButton input, .FilmekDivButton input{
-    width: 10vw;
-    height: 4vw;
+    width: 14vw;
+    height: 6vw;
     cursor: pointer;
     border-radius: .4vw;
     color: white;
-    background-color: rgb(29, 29, 29);
+    background-color: rgb(59, 59, 59);
     border: 2px solid white;
     text-transform: uppercase;
     letter-spacing: 0.1em;
@@ -44,19 +48,36 @@ body{
     display: block;
     margin-left: auto;
     margin-right: auto;
+    position: relative;
+    z-index: 10;
 }
 
 .RolunkDivButton input:hover, .FilmekDivButton input:hover{
     width: 15vw;
-    border-radius: .8vw;
+    background-color: rgb(29, 29, 29);
+    border-radius: .5vw;
     letter-spacing: 0.2em;
 }
 
 .RolunkDivIMG, .FilmekDivIMG{
     text-align: center;
     color: white;
+    margin-top: -4vw;
 }
 
-.RolunkDivButton:hover + .FilmekDivIMG{
-    margin-top: -2vw;
+.RolunkDivIMG img, .FilmekDivIMG img{
+    transition: .8s;
+    position: relative;
+    width: 3.5vw;
+    z-index: -1;
+}
+
+.RolunkDivButton:hover + .RolunkDivIMG img{
+    margin-top: 5vw;
+    width: 5vw;
+}
+
+.FilmekDivButton:hover + .FilmekDivIMG img{
+    margin-top: 5vw;
+    width: 5vw;
 }
