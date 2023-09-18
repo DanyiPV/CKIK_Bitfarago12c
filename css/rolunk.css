@@ -296,7 +296,7 @@ body{
 
 .BelsoIskolaDiv{
     width: 80vw;
-    height: 40vw;
+    height: 30vw;
     margin: auto;
     margin-top: -5vw;
     display: flex;
@@ -311,48 +311,36 @@ body{
 .Pictures{
     display: flex;
     margin: auto;
+    margin-top: 8vw;
 }
 
 .Pictures div{
     height: 20vw;
     width: 25vw;
-    margin: auto;
-}
-
-.PreviousPic{
-    transform: rotate3d(0, -2, 0, 30deg);
-    margin-right: -4vw !important;
 }
 
 .PreviousPic img{
-    transform: perspective(30vw) rotateY(-30deg);
-    width: 80%;
-    margin-top: 3vw;
+    transform: perspective(40vw) rotateY(-40deg);
+    width: 100%;
     border: 2px solid black;
     opacity: .6;
 }
 
-.NextPic{
-    transform: rotate3d(0, 2, 0, 30deg);
-}
-
 .NextPic img{
-    transform: perspective(30vw) rotateY(30deg);
-    width: 80%;
-    margin-top: 3vw;
+    transform: perspective(40vw) rotateY(40deg);
+    width: 100%;
     border: 2px solid black;
     opacity: .6;
 }
 
 .CurrentPic img{
     width: 100%;
-    margin-top: 1.5vw;
     border: 2px solid black;
 }
 
 #ElozoButton, #KovetkezoButton{
     position: absolute;
-    top: 71vw;
+    top: 67vw;
     width: 9vw;
     height: 3vw;
     margin: auto;
@@ -389,8 +377,30 @@ body{
     right: 1vw;
 }
 
-
 /*---------Iskola---------*/
+
+/*---------Tanárok---------*/
+
+.Tanarok{
+    margin: auto;
+    margin-top: .8vw;
+    height: 30vw;
+    width: 97vw;
+    border: 2px solid white;
+    border-radius: .5vw;
+    display: flex;
+    justify-content: space-around;
+}
+
+.SzabDan, .SzabEman{
+    border: 2px solid red;
+    width: 15vw;
+    height: 25vw;
+    margin-top: 2.4vw;
+    border-radius: .6vw;
+}
+
+/*---------Tanárok---------*/
 
 @keyframes Megjelenites{
     from{opacity: 0;}
