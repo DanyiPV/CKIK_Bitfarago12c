@@ -49,6 +49,7 @@ body{
     transition: .6s;
     font-size: 1.2vw;
     opacity: 0;
+    cursor: default;
 }
 
 .VisszaButtonIMG img{
@@ -351,7 +352,7 @@ body{
 
 #ElozoButton, #KovetkezoButton{
     position: absolute;
-    top: 67vw;
+    top: 71vw;
     width: 9vw;
     height: 3vw;
     margin: auto;
