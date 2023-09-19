@@ -54,7 +54,7 @@ body{
 
 .VisszaButtonP p{
     margin-left: .5vw;
-    margin-top: 1.1vw;
+    margin-top: 1vw;
     color: white;
     letter-spacing: 0.15em;
     text-transform: uppercase;
@@ -120,7 +120,7 @@ body{
 .CloseButton{
     opacity: 0;
     width: 45vw;
-    height: 5vw;
+    height: 3vw;
     border-bottom: 2px solid white;
     display: flex;
     justify-content: space-between;
@@ -130,8 +130,8 @@ body{
     cursor: pointer;
     text-decoration: transparent;
     transition: .6s;
-    font-size: 3.5vw;
-    margin-top: 2vw;
+    font-size: 2.5vw;
+    margin-top: 1.7vw;
 }
 
 .CloseButton p:hover{
@@ -140,10 +140,10 @@ body{
 }
 
 .CloseButton img{
-    width: 3vw;
+    width: 1.5vw;
     position: absolute;
     right: .7vw;
-    margin-top: 0;
+    margin-top: -.4vw;
     transition: .6s;
     padding: .8vw;
     border-radius: 1.1vw;
@@ -151,7 +151,7 @@ body{
 }
 
 .CloseButton img:hover{
-    background-color: grey;
+    background-color: rgba(128, 128, 128, 0.6);
 }
 
 #CloseButtonDiv{
@@ -206,6 +206,7 @@ body{
 .BackEluntet{
     animation: BackEltuntet .8s forwards;
 }
+
 .JaniDiv img, .AdamDiv img, .DaniDiv img{
     width: 22vw;
     height: 28vw;
@@ -266,7 +267,7 @@ body{
 
 @keyframes BemutatkozasMegjelen {
     from{width: 0;height: 0; z-index: -1;}
-    to{width: 45vw;height: 55vw; z-index: 3;}
+    to{width: 45vw;height: 45vw; z-index: 3;}
 }
 
 @keyframes BackMegjelen {
@@ -275,7 +276,7 @@ body{
 }
 
 @keyframes BemutatkozasEluntet {
-    from{width: 45vw;height: 55vw; z-index: 3;}
+    from{width: 45vw;height: 45vw; z-index: 3;}
     to{width: 0;height: 0; z-index: -1;}
 }
 
@@ -380,7 +381,7 @@ body{
 #ElozoButton:hover, #KovetkezoButton:hover{
    width: 11vw;
    background-color: rgba(0, 0, 0, 0.5);
-   border: 2px solid white;
+   border: 1px solid white;
    border-radius: .4vw;
    box-shadow: 0 0 10px 0 cyan inset, 0 0 10px 2px cyan;
    letter-spacing: 0.4em;
@@ -402,7 +403,7 @@ body{
 /*---------Tanárok---------*/
 
 .Tanarok{
-    background-image: linear-gradient(to bottom right, rgba(173, 216, 230, 0) , rgba(132, 0, 255, 0.8) 80%);
+    background-image: linear-gradient(to bottom right, rgba(173, 216, 230, 0) , rgba(132, 0, 255, 0.7) 80%);
     margin: auto;
     margin-top: .8vw;
     height: 30vw;
@@ -429,6 +430,7 @@ body{
     text-align: center;
     color: white;
     letter-spacing: 0.05em;
+    margin-top: -.5vw;
 }
 
 .SzabDanP h1{

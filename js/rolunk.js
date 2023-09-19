@@ -13,7 +13,7 @@ var Bemutatkozasok = [{
     szoveg: "Ádám szöveges cuccai"},{
     nev: "Pintea Dániel",
     href: "location.href='https://www.facebook.com/pintea.danielpv/';", 
-    img: "Photos/random1.jpg",
+    img: "Photos/PDani.png",
     szoveg: "Saját szöveges cuccaim"}
 ];
 
@@ -35,7 +35,7 @@ function Bemutatkozas(num){
     document.getElementById('CloseButtonDiv').innerHTML = "<p onclick="+Bemutatkozasok[num].href+">"+Bemutatkozasok[num].nev+"</p>";
     document.getElementById('BemutatkozasIMG').src = Bemutatkozasok[num].img;
     document.getElementById('BemutatkozasP').innerHTML = "<p>"+Bemutatkozasok[num].szoveg+"</p>";
-    //document.getElementById('BemutatkozasP').setAttribute("onclick",Bemutatkozasok[num].href)
+    document.getElementById('BemutatkozasIMG').src = Bemutatkozasok[num].img;
     document.getElementById('BlackBackground').classList = 'BlackBackground BackMegjelen';
     document.getElementById('Bemutatkozas').classList = "Bemutatkozas BemutatkozasMegjelen";
     setTimeout(TobbiMegjelenites,1000);
