@@ -4,12 +4,15 @@ var PicSRC = ["ckik.jfif","ckik1.JPG","ckik2.JPG","ckik3.jpg","ckik4.jpg","ckik5
 var Days = ["MON","TUE","WED","TRU","FRI","SAT","SUN"];
 var Bemutatkozasok = [{
     nev: "Kósik János",
+    href: "location.href='https://www.facebook.com/janos.kosik.9277';",
     img: "Photos/random1.jpg",
     szoveg: "Jani szöveges cuccai"},{
     nev: "Orosz Ádám",
+    href: "location.href='https://www.facebook.com/oroszadam0726';",
     img: "Photos/random1.jpg",
     szoveg: "Ádám szöveges cuccai"},{
     nev: "Pintea Dániel",
+    href: "location.href='https://www.facebook.com/pintea.danielpv/';", 
     img: "Photos/random1.jpg",
     szoveg: "Saját szöveges cuccaim"}
 ];
@@ -29,9 +32,10 @@ function TimeLoop(){
 
 //Bemutatkozás
 function Bemutatkozas(num){
-    document.getElementById('CloseButtonDiv').innerHTML = "<p>"+Bemutatkozasok[num].nev+"</p>";
+    document.getElementById('CloseButtonDiv').innerHTML = "<p onclick="+Bemutatkozasok[num].href+">"+Bemutatkozasok[num].nev+"</p>";
     document.getElementById('BemutatkozasIMG').src = Bemutatkozasok[num].img;
     document.getElementById('BemutatkozasP').innerHTML = "<p>"+Bemutatkozasok[num].szoveg+"</p>";
+    //document.getElementById('BemutatkozasP').setAttribute("onclick",Bemutatkozasok[num].href)
     document.getElementById('BlackBackground').classList = 'BlackBackground BackMegjelen';
     document.getElementById('Bemutatkozas').classList = "Bemutatkozas BemutatkozasMegjelen";
     setTimeout(TobbiMegjelenites,1000);

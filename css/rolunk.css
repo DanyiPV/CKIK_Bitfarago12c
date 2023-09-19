@@ -1,16 +1,28 @@
 body{
-    background-color: rgb(61, 61, 61);
+    background-image: linear-gradient(to bottom right, rgb(70, 134, 255) 30%, black);
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 /*---------Navbar---------*/
 .NavBar{
     margin: auto;
-    border: 2px solid white;
+    border: 1px solid white;
     margin-bottom: .6vw;
     height: 3.5vw;
     width: 97vw;
     border-radius: .5vw;
+    display: flex;
+    justify-content: space-between;
+    background-image: linear-gradient(to top right, blue 30%, lightblue);
+}
+
+.NavBar h1{
+    color: white;
+    text-decoration: underline;
+    position: relative;
+    margin-top: .5vw;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
 }
 
 #ora{
@@ -42,7 +54,7 @@ body{
 
 .VisszaButtonP p{
     margin-left: .5vw;
-    margin-top: 1vw;
+    margin-top: 1.1vw;
     color: white;
     letter-spacing: 0.15em;
     text-transform: uppercase;
@@ -60,7 +72,6 @@ body{
 .VisszaButtonIMG:hover + .VisszaButtonP p{
     opacity: 1;
 }
-/*---------Bemutatkozás---------*/
 
 /*---------Bemutatkozás---------*/
 .BlackBackground{
@@ -75,9 +86,26 @@ body{
     transform: translate(-50%, -50%);
 }
 
+.HarmunkDiv{
+    border: 1px solid white;
+    background-image: linear-gradient(to bottom right, blue 20%, rgba(173, 216, 230, 0));
+    width: 97vw;
+    height: 48vw;
+    margin: auto;
+    border-radius: .5vw;
+    justify-content: space-around;
+    display: flex;
+}
+
+.HarmunkDiv div{
+    margin-top: 1vw;
+    border-radius: .6vw;
+}
+
 .Bemutatkozas{
     position: absolute;
-    border: 2px solid white;
+    border: 1px solid white;
+    background-image: linear-gradient(to top right, blue 20%, lightblue);
     z-index: -1;
     top: 50%;
     left: 50%;
@@ -91,20 +119,33 @@ body{
 
 .CloseButton{
     opacity: 0;
-    width: 25vw;
-    height: 2vw;
+    width: 45vw;
+    height: 5vw;
     border-bottom: 2px solid white;
     display: flex;
     justify-content: space-between;
 }
 
+.CloseButton p{
+    cursor: pointer;
+    text-decoration: transparent;
+    transition: .6s;
+    font-size: 3.5vw;
+    margin-top: 2vw;
+}
+
+.CloseButton p:hover{
+    text-decoration: underline white;
+    letter-spacing: 0.1em;
+}
+
 .CloseButton img{
-    width: 1.2vw;
+    width: 3vw;
     position: absolute;
     right: .7vw;
-    top: .2vw;
+    margin-top: 0;
     transition: .6s;
-    padding: .6vw;
+    padding: .8vw;
     border-radius: 1.1vw;
     cursor: pointer;
 }
@@ -124,7 +165,7 @@ body{
 }
 
 .BemutatkozasIMG{
-    width: 9vw;
+    width: 23vw;
     margin-top: .7vw;
     border-radius: .5vw;
     position: absolute;
@@ -132,8 +173,8 @@ body{
 }
 
 .BemutatkozasP{
-    font-size: 1.2vw;
-    margin-left: 9.5vw;
+    font-size: 1.5vw;
+    margin-left: 24vw;
     margin-top: -.4vw;
     text-align: justify;
     color: white;
@@ -165,25 +206,6 @@ body{
 .BackEluntet{
     animation: BackEltuntet .8s forwards;
 }
-
-.HarmunkDiv{
-    border: 2px solid white;
-    width: 97vw;
-    height: 48vw;
-    margin: auto;
-    border-radius: .5vw;
-    justify-content: space-around;
-    display: flex;
-}
-
-.HarmunkDiv div{
-    width: 25vw;
-    height: 45vw;
-    border: 2px solid red;
-    margin-top: 1vw;
-    border-radius: .6vw;
-}
-
 .JaniDiv img, .AdamDiv img, .DaniDiv img{
     width: 22vw;
     height: 28vw;
@@ -216,10 +238,9 @@ body{
     width: 16vw;
     letter-spacing: 0.15em;
     border-radius: .6vw 1.5vw .6vw 1.5vw;
-    border-top: 2px solid white;
-    border-bottom: 2px solid white;
-    color: rgb(0, 153, 255);
-    background-color: rgb(39, 39, 39);
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    background-image: linear-gradient(to right, rgba(0, 42, 156, 0.4) , rgba(103, 127, 134, 0.4));
     box-shadow: 0 0 10px 0 rgb(0, 153, 255) inset, 0 0 10px 2px rgb(0, 153, 255);
 }
 
@@ -227,10 +248,9 @@ body{
     width: 16vw;
     letter-spacing: 0.15em;
     border-radius: .6vw 1.5vw .6vw 1.5vw;
-    border-top: 2px solid white;
-    border-bottom: 2px solid white;
-    color: red;
-    background-color: rgb(39, 39, 39);
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    background-image: linear-gradient(to right, rgba(0, 42, 156, 0.4) , rgba(103, 127, 134, 0.4));
     box-shadow: 0 0 10px 0 red inset, 0 0 10px 2px red;
 }
 
@@ -238,16 +258,15 @@ body{
     width: 16vw;
     letter-spacing: 0.15em;
     border-radius: .6vw 1.5vw .6vw 1.5vw;
-    border-top: 2px solid white;
-    border-bottom: 2px solid white;
-    color: lime;
-    background-color: rgb(39, 39, 39);
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    background-image: linear-gradient(to right, rgba(0, 42, 156, 0.4) , rgba(103, 127, 134, 0.4));
     box-shadow: 0 0 10px 0 lime inset, 0 0 10px 2px lime;
 }
 
 @keyframes BemutatkozasMegjelen {
     from{width: 0;height: 0; z-index: -1;}
-    to{width: 25vw;height: 25vw; z-index: 3;}
+    to{width: 45vw;height: 55vw; z-index: 3;}
 }
 
 @keyframes BackMegjelen {
@@ -256,7 +275,7 @@ body{
 }
 
 @keyframes BemutatkozasEluntet {
-    from{width: 25vw;height: 25vw; z-index: 3;}
+    from{width: 45vw;height: 55vw; z-index: 3;}
     to{width: 0;height: 0; z-index: -1;}
 }
 
@@ -275,10 +294,11 @@ body{
 .Iskola{
     width: 97vw;
     height: auto;
-    border: 2px solid white;
+    border: 1px solid white;
     margin: auto;
     margin-top: .9vw;
     border-radius: .5vw;
+    background-image: linear-gradient(to bottom right, blue, rgba(173, 216, 230, 0) 50% , rgba(132, 0, 255, 0.8));
 }
 
 .Iskola h1{
@@ -382,6 +402,7 @@ body{
 /*---------Tanárok---------*/
 
 .Tanarok{
+    background-image: linear-gradient(to bottom right, rgba(173, 216, 230, 0) , rgba(132, 0, 255, 0.8) 80%);
     margin: auto;
     margin-top: .8vw;
     height: 30vw;
@@ -393,11 +414,34 @@ body{
 }
 
 .SzabDan, .SzabEman{
-    border: 2px solid red;
     width: 15vw;
     height: 25vw;
     margin-top: 2.4vw;
     border-radius: .6vw;
+}
+
+.SzabDanIMG img, .SzabEmanIMG img{
+    width: 15vw;
+    border-radius: .4vw;
+}
+
+.SzabDanP h1, .SzabEmanP h1{
+    text-align: center;
+    color: white;
+    letter-spacing: 0.05em;
+}
+
+.SzabDanP h1{
+    font-size: 2vw;
+}
+
+.SzabEmanP h1{
+    font-size: 1.7vw;
+}
+
+.CKIKIMG img{
+    margin-top: 2.5vw;
+    width: 25vw;
 }
 
 /*---------Tanárok---------*/

@@ -56,7 +56,15 @@ body{
     width: 15vw;
     background-color: rgb(29, 29, 29);
     border-radius: .5vw;
-    letter-spacing: 0.2em;
+    letter-spacing: 0.4em;
+}
+
+.RolunkDivButton input:hover{
+    box-shadow: 0 0 10px 0 rgb(0, 153, 255) inset, 0 0 10px 2px rgb(0, 153, 255);
+}
+
+.FilmekDivButton input:hover{
+    box-shadow: 0 0 10px 0 lime inset, 0 0 10px 2px lime;
 }
 
 .RolunkDivIMG, .FilmekDivIMG{
