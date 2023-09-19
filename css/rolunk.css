@@ -308,7 +308,15 @@ body{
     letter-spacing: 0.15em;
     color: white;
     font-size: 2.2vw;
-    text-decoration: underline;
+    text-decoration: underline rgba(255, 255, 255, 0);
+    position: relative;
+    z-index: 10;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.Iskola h1:hover{
+    text-decoration: underline red;
 }
 
 .IskolaContainer{
@@ -408,7 +416,7 @@ body{
     margin-top: .8vw;
     height: 30vw;
     width: 97vw;
-    border: 2px solid white;
+    border: 1px solid white;
     border-radius: .5vw;
     display: flex;
     justify-content: space-around;
@@ -444,6 +452,7 @@ body{
 .CKIKIMG img{
     margin-top: 2.5vw;
     width: 25vw;
+    cursor: pointer;
 }
 
 /*---------Tanárok---------*/

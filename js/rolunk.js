@@ -17,6 +17,9 @@ var Bemutatkozasok = [{
     szoveg: "Saját szöveges cuccaim"}
 ];
 
+document.getElementById("CKIK_logo").setAttribute("onclick","location.href='https://www.facebook.com/ckik.hu/?locale=hu_HU';");
+document.getElementById("CKIK_name").setAttribute("onclick","location.href='https://www.ckik.hu';")
+
 //ora
 function TimeLoop(){
     var now = new Date();
