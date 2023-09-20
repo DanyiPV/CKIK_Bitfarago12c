@@ -1,0 +1,73 @@
+body{
+    background-image: linear-gradient(to bottom right, rgba(170, 170, 170, 0.4), rgba(155, 230, 255, 0.4));
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.NavBar{
+    width: 97vw;
+    height: 5vw;
+    border: 2px solid;
+    border-radius: .4vw;
+    margin: auto;
+    /*box-shadow: 0 0 15px 30px red inset, 0 0 20px 5px red;*/
+    background-image: linear-gradient(to top left, gray 30%, rgb(0, 191, 255));
+    transition: .7s;
+    justify-content: space-between;
+    display: flex;
+}
+
+.VisszaButton{
+    display: flex;
+}
+
+.VisszaButtonIMG img{
+    width: 4vw;
+    margin-top: .5vw;
+    transition: .6s;
+    position: relative;
+    z-index: 1;
+}
+
+.VisszaButtonP p{
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    font-size: 1.5vw;
+    margin-left: -5vw;
+    opacity: 0;
+    margin-top: 1.7vw;
+    transition: .6s;
+}
+
+.VisszaButtonIMG:hover + .VisszaButtonP p{
+    opacity: 1;
+    margin-left: 0vw;
+}
+
+.SearchBar{
+    border: 2px solid black;
+    width: 17vw;
+    height: 3vw;
+    margin-top: .8vw;
+    margin-right: 1vw;
+    border-radius: .7vw;
+}
+
+.FilterDiv{
+    border-right: 2px solid black;
+    width: 3vw;
+    height: 3vw;
+    transition: .5s;
+}
+
+.FilterDiv img{
+    width: 2.5vw;
+    cursor: pointer;
+    margin: .25vw;
+}
+
+.FilterDiv img:hover > .FilterDiv{
+   background-color: gray;
+}
