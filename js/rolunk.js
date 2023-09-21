@@ -1,6 +1,6 @@
 var Ora;
 var CurrentPicIndex = 0;
-var PicSRC = ["ckik.jfif","ckik1.JPG","ckik2.JPG","ckik3.jpg","ckik4.jpg","ckik5.jpg","ckik6.jpg"];
+var PicSRC = ["ckik.jfif","ckik1.JPG","ckik2.JPG","ckik3.jpg","ckik4.jpg","ckik5.jpg","ckik6.jpg","ckik7.JPG","ckik8.jpg","ckik9.jpg","csoportkep.jpg"];
 var Days = ["MON","TUE","WED","TRU","FRI","SAT","SUN"];
 var Bemutatkozasok = [{
     nev: "Kósik János",

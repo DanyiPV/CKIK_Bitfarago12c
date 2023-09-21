@@ -1,6 +1,9 @@
 body{
     background-image: linear-gradient(to bottom right, rgb(70, 134, 255) 30%, black);
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 /*---------Navbar---------*/
@@ -23,6 +26,7 @@ body{
     margin-top: .5vw;
     letter-spacing: 0.1em;
     text-transform: uppercase;
+    font-size: 2.5vw;
 }
 
 #ora{
