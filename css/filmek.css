@@ -7,6 +7,7 @@ body{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
+/*---------Navbar---------*/
 .NavBar{
     width: 97vw;
     height: 5vw;
@@ -38,7 +39,7 @@ body{
     font-size: 1.5vw;
     margin-left: -5vw;
     opacity: 0;
-    margin-top: 1.7vw;
+    margin-top: 1.5vw;
     transition: .6s;
 }
 
@@ -103,6 +104,7 @@ body{
     margin: auto;
     width: 12vw;
     margin-left: .4vw;
+    position: relative;
 }
 
 .SearchInput input{
@@ -139,6 +141,46 @@ body{
     animation: SearchShow .7s forwards;
 }
 
+.SearchHide{
+    animation: SearchHide .7s forwards;
+}
+
 @keyframes SearchShow {
     100%{width: 9vw; opacity: 1;}
 }
+
+@keyframes SearchHide{
+    from{width: 9vw; opacity: 1;}
+    to{width: 1vw; opacity: 0;}
+}
+
+/*---------Navbar---------*/
+
+/*---------Body---------*/
+
+.Container{
+    border: 2px solid black;
+    width: 97vw;
+    height: 40vw;
+    margin: auto;
+    margin-top: .5vw;
+    border-radius: .4vw;
+    padding-bottom: .8vw;
+}
+
+.column{
+    width: 95vw;
+    height: 18vw;
+    margin: auto;
+    margin-top: .8vw;
+    display: flex;
+}
+
+.row{
+    width: 20%;
+    height: 93.5%;
+    border: 2px solid black;
+    margin: .5vw;
+}
+
+/*---------Body---------*/
