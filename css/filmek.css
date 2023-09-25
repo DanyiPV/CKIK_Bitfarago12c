@@ -8,6 +8,51 @@ body{
 }
 
 /*---------Navbar---------*/
+.FilterOpen{
+    width: 20vw;
+    height: 15vw;
+    background-color: gray;
+    border: 2px solid white;
+    border-radius: .7vw;
+    position: absolute;
+    right: 19.5vw;
+    top: 1.4vw;
+    padding: .5vw;
+    overflow-y: scroll;
+}
+
+.FilterColumn{
+    display: flex;
+    width: 100%;
+    margin: .5vw 0;
+}
+
+.FilterColumn h3{
+    text-align: center;
+    color: white;
+    margin: .5vw auto;
+}
+
+.FilterColumn input{
+    width: 5vw;
+    border-radius: .4vw;
+    background-color: gray;
+    color: white;
+    border: 2px solid white;
+    transition: .6s;
+    cursor: pointer;
+}
+
+.Keres:hover{
+    box-shadow: 0 0 10px 0 lime inset, 0 0 10px 2px lime;
+    background-color: rgb(61, 61, 61);
+}
+
+.NemKeres:hover{
+    box-shadow: 0 0 10px 0 red inset, 0 0 10px 2px red;
+    background-color: rgb(61, 61, 61);
+}
+
 .NavBar{
     width: 97vw;
     height: 5vw;
@@ -174,7 +219,7 @@ body{
     margin: auto;
     margin-top: .8vw;
     display: flex;
-    padding-bottom: .7vw;
+    padding-bottom: 1vw;
     transition: .6s;
 }
 
@@ -183,6 +228,7 @@ body{
     height: 100%;
     border: 2px solid black;
     transition: .6s;
+    margin: .5vw;
 }
 
 .RowIMG{

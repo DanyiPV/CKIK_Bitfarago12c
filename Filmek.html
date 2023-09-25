@@ -7,6 +7,28 @@
     <title>Bitfaragó | Filmek</title>
 </head>
 <body>
+    <div id="FilterOpen" class="FilterOpen">
+        <div class="FilterColumn">
+            <input type="button" value="Keres" id="Akció" class="Keres" onclick="Keres(this)">
+            <h3>Akció</h3>
+            <input type="button" value="Nem keres" id="Akció" class="NemKeres" onclick="NemKeres(this)">
+        </div>
+        <div class="FilterColumn">
+            <input type="button" value="Keres" id="Dráma" class="Keres" onclick="Keres(this)">
+            <h3>Dráma</h3>
+            <input type="button" value="Nem keres" id="Dráma" class="NemKeres" onclick="NemKeres(this)">
+        </div>
+        <div class="FilterColumn">
+            <input type="button" value="Keres" id="Fantasy" class="Keres" onclick="Keres(this)">
+            <h3>Fantasy</h3>
+            <input type="button" value="Nem keres" id="Fantasy" class="NemKeres" onclick="NemKeres(this)">
+        </div>
+        <div class="FilterColumn">
+            <input type="button" value="Keres" id="Romantikus" class="Keres" onclick="Keres(this)">
+            <h3>Romantikus</h3>
+            <input type="button" value="Nem keres" id="Romantikus" class="NemKeres" onclick="NemKeres(this)">
+        </div>
+    </div>
     <div class="NavBar">
         <div id="VisszaButton" class="VisszaButton">
             <div class="VisszaButtonIMG">
@@ -21,7 +43,7 @@
         </div>
         <div class="SearchBar">
             <div class="FilterDiv">
-                <img src="Photos/filter.png" alt="" onclick="">
+                <img src="Photos/filter.png" alt="" onclick="Filter()">
             </div>
             <div class="SearchIMG">
                 <img src="Photos/search.png" alt="" onclick="SearchBarShow()">
@@ -32,168 +54,7 @@
         </div>
     </div>
     <div class="Container">
-        <div class="column" id="column">
-            <div class="row" id="row">
-                <div class="RowIMG">
-                    <img src="Photos/random1.jpg" alt="">
-                    <div>
-                        <h2>Kategória1</h2>
-                        <h2>Kategória2</h2>
-                        <h2>Kategória3</h2>
-                    </div>
-                </div>
-                <div class="RowH1">
-                    <h1>Cím</h1>
-                </div>
-            </div>
-            <div class="row">
-                <div class="RowIMG">
-                    <img src="Photos/random1.jpg" alt="">
-                    <div>
-                        <h2>Kategória1</h2>
-                        <h2>Kategória2</h2>
-                        <h2>Kategória3</h2>
-                    </div>
-                </div>
-                <div class="RowH1">
-                    <h1>Cím</h1>
-                </div>
-            </div>
-            <div class="row">
-                <div class="RowIMG">
-                    <img src="Photos/random1.jpg" alt="">
-                    <div>
-                        <h2>Kategória1</h2>
-                        <h2>Kategória2</h2>
-                        <h2>Kategória3</h2>
-                    </div>
-                </div>
-                <div class="RowH1">
-                    <h1>Cím</h1>
-                </div>
-            </div>
-            <div class="row">
-                <div class="RowIMG">
-                    <img src="Photos/random1.jpg" alt="">
-                    <div>
-                        <h2>Kategória1</h2>
-                        <h2>Kategória2</h2>
-                        <h2>Kategória3</h2>
-                    </div>
-                </div>
-                <div class="RowH1">
-                    <h1>Cím</h1>
-                </div>
-            </div>
-        </div>
-        <div class="column">
-            <div class="row">
-                <div class="RowIMG">
-                    <img src="Photos/random1.jpg" alt="">
-                    <div>
-                        <h2>Kategória1</h2>
-                        <h2>Kategória2</h2>
-                        <h2>Kategória3</h2>
-                    </div>
-                </div>
-                <div class="RowH1">
-                    <h1>Cím</h1>
-                </div>
-            </div>
-            <div class="row">
-                <div class="RowIMG">
-                    <img src="Photos/random1.jpg" alt="">
-                    <div>
-                        <h2>Kategória1</h2>
-                        <h2>Kategória2</h2>
-                        <h2>Kategória3</h2>
-                    </div>
-                </div>
-                <div class="RowH1">
-                    <h1>Cím</h1>
-                </div>
-            </div>
-            <div class="row">
-                <div class="RowIMG">
-                    <img src="Photos/random1.jpg" alt="">
-                    <div>
-                        <h2>Kategória1</h2>
-                        <h2>Kategória2</h2>
-                        <h2>Kategória3</h2>
-                    </div>
-                </div>
-                <div class="RowH1">
-                    <h1>Cím</h1>
-                </div>
-            </div>
-            <div class="row">
-                <div class="RowIMG">
-                    <img src="Photos/random1.jpg" alt="">
-                    <div>
-                        <h2>Kategória1</h2>
-                        <h2>Kategória2</h2>
-                        <h2>Kategória3</h2>
-                    </div>
-                </div>
-                <div class="RowH1">
-                    <h1>Cím</h1>
-                </div>
-            </div>
-        </div>
-        <div class="column">
-            <div class="row">
-                <div class="RowIMG">
-                    <img src="Photos/random1.jpg" alt="">
-                    <div>
-                        <h2>Kategória1</h2>
-                        <h2>Kategória2</h2>
-                        <h2>Kategória3</h2>
-                    </div>
-                </div>
-                <div class="RowH1">
-                    <h1>Cím</h1>
-                </div>
-            </div>
-            <div class="row">
-                <div class="RowIMG">
-                    <img src="Photos/random1.jpg" alt="">
-                    <div>
-                        <h2>Kategória1</h2>
-                        <h2>Kategória2</h2>
-                        <h2>Kategória3</h2>
-                    </div>
-                </div>
-                <div class="RowH1">
-                    <h1>Cím</h1>
-                </div>
-            </div>
-            <div class="row">
-                <div class="RowIMG">
-                    <img src="Photos/random1.jpg" alt="">
-                    <div>
-                        <h2>Kategória1</h2>
-                        <h2>Kategória2</h2>
-                        <h2>Kategória3</h2>
-                    </div>
-                </div>
-                <div class="RowH1">
-                    <h1>Cím</h1>
-                </div>
-            </div>
-            <div class="row">
-                <div class="RowIMG">
-                    <img src="Photos/random1.jpg" alt="">
-                    <div>
-                        <h2>Kategória1</h2>
-                        <h2>Kategória2</h2>
-                        <h2>Kategória3</h2>
-                    </div>
-                </div>
-                <div class="RowH1">
-                    <h1>Cím</h1>
-                </div>
-            </div>
-        </div>
+        
     </div>
 </body>
 <script src="js/filmek.js"></script>
