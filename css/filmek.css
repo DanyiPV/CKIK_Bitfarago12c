@@ -161,7 +161,7 @@ body{
 .Container{
     border: 2px solid black;
     width: 97vw;
-    height: 40vw;
+    height: auto;
     margin: auto;
     margin-top: .5vw;
     border-radius: .4vw;
@@ -170,17 +170,46 @@ body{
 
 .column{
     width: 95vw;
-    height: 18vw;
+    height: 19vw;
     margin: auto;
     margin-top: .8vw;
     display: flex;
+    padding-bottom: .7vw;
+    transition: .6s;
 }
 
 .row{
-    width: 20%;
-    height: 93.5%;
+    width: 25%;
+    height: 100%;
     border: 2px solid black;
+    transition: .6s;
+}
+
+.RowIMG{
+    display: flex;
+    transition: .6s;
+}
+
+.RowIMG img{
+    width: 10vw;
     margin: .5vw;
+    border: 1px solid black;
+    border-radius: .5vw;
+    transition: .6s;
+}
+
+.RowIMG h2{
+    width: 100%;
+    text-align: center;
+    font-size: 1.5vw;
+    margin-left: 1vw;
+    transition: .6s;
+}
+
+.RowH1 h1{
+    width: 100%;
+    margin: .5vw;
+    transition: .6s;
 }
 
 /*---------Body---------*/
