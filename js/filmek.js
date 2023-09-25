@@ -19,6 +19,7 @@ const filmek= [
 {cim: "Terminátor 2. - Az ítélet napja2",img: "Photos/film5.jpg",data: ["Akció"]}
 ]
 
+var FilterMegjelenit = false;
 var div = document.getElementById("filmek");var keres = [];var nemkeres = [];
 function betolt(){
     div.innerHTML = "";var index = 0;var count = 0;var eindex = 0;var tmp = document.createElement("div");
@@ -67,6 +68,7 @@ function betolt(){
         div.appendChild(tmp);
     }
 }
+
 function Keres(btn){
     if (!keres.includes(btn.id)) {
         keres.push(btn.id);
@@ -80,6 +82,7 @@ function Keres(btn){
     }
     betolt();
 }
+
 function NemKeres(btn){
     if (keres.includes(btn.id)) {
         keres = keres.filter(item => item !== btn.id);  
@@ -105,6 +108,51 @@ function SearchTime(){
     if(document.getElementById('SearchInput').value == ""){
         document.getElementById("SearchInput").classList.add("SearchHide");
         setTimeout(SearchClassRemove,500);
+    }
+}
+
+function Filter(){
+    var KeresButtonok = document.getElementsByClassName('Keres');
+    var NemKeresButtonok = document.getElementsByClassName('NemKeres');
+    if(FilterMegjelenit == false){
+        FilterMegjelenit = true;
+        document.getElementById('FilterOpen').classList += " FilterMegjelenites";
+        setTimeout(FilterOpen,600);
+    }
+    else if(FilterMegjelenit == true){
+        FilterMegjelenit = false;
+        for (let i = 0; i < KeresButtonok.length; i++) {
+            KeresButtonok[i].classList += " Eltuntetes";
+            NemKeresButtonok[i].classList += " Eltuntetes";
+            document.getElementById(KeresButtonok[i].id+"h").classList += " Eltuntetes";
+        }
+        setTimeout(FilterClose,600);
+    }
+}
+
+function FilterOpen(){
+    var KeresButtonok = document.getElementsByClassName('Keres');
+    var NemKeresButtonok = document.getElementsByClassName('NemKeres');
+    for (let i = 0; i < KeresButtonok.length; i++) {
+        KeresButtonok[i].classList += " Megjelenites";
+        NemKeresButtonok[i].classList += " Megjelenites";
+        document.getElementById(KeresButtonok[i].id+"h").classList += " Megjelenites";
+    }
+}
+
+function FilterClose(){
+    document.getElementById('FilterOpen').classList += " FilterEltuntetes";
+    setTimeout(RemoveClass,200);
+}
+
+function RemoveClass(){
+    var KeresButtonok = document.getElementsByClassName('Keres');
+    var NemKeresButtonok = document.getElementsByClassName('NemKeres');
+    document.getElementById('FilterOpen').classList = "FilterOpen";
+    for (let i = 0; i < KeresButtonok.length; i++){
+        KeresButtonok[i].classList = "Keres";
+        NemKeresButtonok[i].classList = "NemKeres";
+        document.getElementById(KeresButtonok[i].id+"h").classList = "";
     }
 }
 

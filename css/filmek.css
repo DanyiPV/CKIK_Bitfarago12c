@@ -16,9 +16,12 @@ body{
     border-radius: .7vw;
     position: absolute;
     right: 19.5vw;
-    top: 1.4vw;
+    top: 1.35vw;
     padding: .5vw;
     overflow-y: scroll;
+    margin-right: -5vw;
+    opacity: 0;
+    z-index: -1;
 }
 
 .FilterColumn{
@@ -31,6 +34,8 @@ body{
     text-align: center;
     color: white;
     margin: .5vw auto;
+    font-size: 1vw;
+    opacity: 0;
 }
 
 .FilterColumn input{
@@ -41,6 +46,30 @@ body{
     border: 2px solid white;
     transition: .6s;
     cursor: pointer;
+    opacity: 0;
+    font-size: .7vw;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+
+.NemKeres{
+    width: 6vw !important;
+}
+
+.FilterMegjelenites{
+    animation: FilterMegjelenites .6s forwards;
+}
+
+.FilterEltuntetes{
+    animation: FilterEltuntetes .6s forwards;
+}
+
+.Megjelenites{
+    animation: Megjelenites .6s forwards;
+}
+
+.Eltuntetes{
+    animation: Eltuntetes .6s forwards;
 }
 
 .Keres:hover{
@@ -199,6 +228,26 @@ body{
     to{width: 1vw; opacity: 0;}
 }
 
+@keyframes Megjelenites{
+    from{opacity: 0;}
+    to{opacity: 1;}
+}
+
+@keyframes Eltuntetes{
+    from{opacity: 1;}
+    to{opacity: 0;}
+}
+
+@keyframes FilterMegjelenites{
+    from{margin-right: -5vw; opacity: 0; z-index: -1;}
+    to{margin-right: 0vw; opacity: 1; z-index: 2;}
+}
+
+@keyframes FilterEltuntetes{
+    from{margin-right: 0vw; opacity: 1; z-index: 2;}
+    to{margin-right: -5vw; opacity: 0; z-index: -1;}
+}
+
 /*---------Navbar---------*/
 
 /*---------Body---------*/
@@ -247,7 +296,7 @@ body{
 .RowIMG h2{
     width: 100%;
     text-align: center;
-    font-size: 1.5vw;
+    font-size: 1.3vw;
     margin-left: 1vw;
     transition: .6s;
 }
@@ -256,6 +305,7 @@ body{
     width: 100%;
     margin: .5vw;
     transition: .6s;
+    font-size: 1.2vw;
 }
 
 /*---------Body---------*/
