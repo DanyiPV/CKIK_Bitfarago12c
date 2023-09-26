@@ -358,7 +358,7 @@ body{
     transform: translate(-50%, -50%);
 }
 .Bemutatkozas{
-    position: absolute;
+    position: fixed;
     border: 1px solid white;
     background-image: linear-gradient(to bottom right, rgba(170, 170, 170), rgba(155, 230, 255));
     z-index: -1;
@@ -381,7 +381,7 @@ body{
     justify-content: space-between;
 }
 
- .CloseButton p{
+.CloseButton p{
     text-decoration: transparent;
     transition: .6s;
     font-size: 2.5vw;

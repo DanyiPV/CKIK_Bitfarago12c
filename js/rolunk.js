@@ -14,7 +14,7 @@ var Bemutatkozasok = [{
     nev: "Pintea Dániel",
     href: "location.href='https://www.facebook.com/pintea.danielpv/';", 
     img: "Photos/PDani.png",
-    szoveg: "Saját szöveges cuccaim"}
+    szoveg: 'Pintea Dániel vagyok, a Ceglédi Közgáz 12-es tanulója. A programozás egyben a "munkám" és a hobbim is, szeretem csinálni amikor tudom. Persze van más hobbim is ezek mellett, például az autózás vagy a számítogépek.'}
 ];
 
 document.getElementById("CKIK_logo").setAttribute("onclick","location.href='https://www.facebook.com/ckik.hu/?locale=hu_HU';");
