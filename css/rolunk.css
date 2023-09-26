@@ -317,7 +317,7 @@ body{
     position: relative;
     z-index: 10;
     cursor: pointer;
-    transition: .5s;
+    transition: .6s;
 }
 
 .Iskola h1:hover{
@@ -393,7 +393,7 @@ body{
     cursor: pointer;
     color: white;
     background-color: rgba(0, 0, 0, 0);
-    transition: .8s;
+    transition: .6s;
     font-size: .9vw;
     letter-spacing: 0.1em;
     text-transform: uppercase;

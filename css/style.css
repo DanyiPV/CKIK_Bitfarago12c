@@ -17,7 +17,7 @@ body{
 .RolunkDiv, .FilmekDiv{
     margin-top: 10vw;
     width: 15vw;
-    transition: .8s;
+    transition: .3s;
 }
 
 .RolunkDiv{
@@ -29,7 +29,7 @@ body{
 }
 
 .RolunkDivButton, .FilmekDivButton{
-    transition: .6s;
+    transition: .3s;
 }
 
 .RolunkDivButton input, .FilmekDivButton input{
@@ -42,7 +42,7 @@ body{
     border: 2px solid white;
     text-transform: uppercase;
     letter-spacing: 0.1em;
-    transition: .8s;
+    transition: .3s;
     font-size: 1.2vw;
     text-align: center;
     display: block;
@@ -74,7 +74,7 @@ body{
 }
 
 .RolunkDivIMG img, .FilmekDivIMG img{
-    transition: .8s;
+    transition: .3s;
     position: relative;
     width: 3.5vw;
     z-index: -1;

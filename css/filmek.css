@@ -90,7 +90,7 @@ body{
     margin: auto;
     /*box-shadow: 0 0 15px 30px red inset, 0 0 20px 5px red;*/
     background-image: linear-gradient(to top left, gray 30%, rgb(0, 191, 255));
-    transition: .7s;
+    transition: .6s;
     justify-content: space-between;
     display: flex;
 }
@@ -144,7 +144,7 @@ body{
     border-right: 2px solid white;
     width: 3vw;
     height: 3vw;
-    transition: .5s;
+    transition: .6s;
 }
 
 .FilterDiv img{
@@ -190,11 +190,13 @@ body{
     border: 1px solid white;
     color: white;
     position: relative;
-    transition: .7s;
+    transition: 2s;
+    
+
     opacity: 0;
 }
 
-.SearchInput input[type=text]{
+.Search7st input[type=text]{
     padding-left: .7vw;
 }
 
@@ -212,11 +214,11 @@ body{
 }
 
 .SearchShow{
-    animation: SearchShow .7s forwards;
+    animation: SearchShow .30s forwards;
 }
 
 .SearchHide{
-    animation: SearchHide .7s forwards;
+    animation: SearchHide 2s forwards;
 }
 
 @keyframes SearchShow {
@@ -448,19 +450,19 @@ body{
 .BemutatkozasMegjelen{
     opacity: 1;
     z-index: 2;
-    animation: BemutatkozasMegjelen .8s forwards;
+    animation: BemutatkozasMegjelen .6s forwards;
 }
 
 .BackMegjelen{
-    animation: BackMegjelen .8s forwards;
+    animation: BackMegjelen .6s forwards;
 }
 
 .BemutatkozasEluntet{
-    animation: BemutatkozasEluntet .8s forwards;
+    animation: BemutatkozasEluntet .6s forwards;
 }
 
 .BackEluntet{
-    animation: BackEltuntet .8s forwards;
+    animation: BackEltuntet .6s forwards;
 }
 
 @keyframes BemutatkozasMegjelen {

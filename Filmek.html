@@ -87,7 +87,7 @@
     <div class="NavBar">
         <div id="VisszaButton" class="VisszaButton">
             <div class="VisszaButtonIMG">
-                <a href="index.html"><img src="Photos/arrow.png" alt=""></a>
+                <a href="index.html"><img src="Photos/arrow.png" ></a>
             </div>
             <div class="VisszaButtonP">
                 <p>Vissza</p>
@@ -98,13 +98,13 @@
         </div>
         <div class="SearchBar">
             <div class="FilterDiv">
-                <img src="Photos/filter.png" alt="" onclick="Filter()">
+                <img src="Photos/filter.png"  onclick="Filter()">
             </div>
             <div class="SearchIMG">
-                <img src="Photos/search.png" alt="" onclick="SearchBarShow()">
+                <img src="Photos/search.png" onclick="SearchBarShow()">
             </div>
             <div class="SearchInput">
-                <input type="text" name="search" id="SearchInput" class="SearchInput" placeholder="Keresés" onclick="SearchBarShow()">
+                <input type="text" name="search" id="SearchInput" class="SearchInput"onkeyup="betolt()"  placeholder="Keresés" onclick="SearchBarShow()">
             </div>
         </div>
     </div>
