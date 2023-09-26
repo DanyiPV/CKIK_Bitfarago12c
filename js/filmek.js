@@ -34,9 +34,7 @@ const filmek= [
 {cim: "Konvoj", img: "Photos/film26.jpg",data: ["Akció","Dráma"], leiras: 'Az óriáskamionok sofőrjeinek nem habostorta az élete. A gázolaj ára egyre magasabb, a verseny egyre nagyobb, ráadásul rendőrök hada áll lesben lassan szinte minden farakás mögött, hogy a legkisebb vétség esetén fülöncsípje őket. Gumikacsa, a 18 kerekű kamioncsoda vezetője azonban nem ijed meg tőlük. A rendőrök minden cselére van egy még ügyesebb fortélya, és végül konvojba szervezi valamennyi sértett kamionost, hogy végre ők is megmutathassák, mit tudnak...'},
 {cim: "A második esélyek királya", img: "Photos/film27.jpg",data: ["Dokumentum","Életrajzi","Dráma"], leiras: 'Mike Veeck, a legendás Major League baseball-tulajdonos, Bill Veeck fia felrobbantja apja karrierjét, majd a következő évtizedeket azzal tölti, hogy megtanulja, mit is ér a második esély.'},
 {cim: "Atlantisz gyermekei",img: "Photos/film28.jpg",data: ["Dráma","Rejtély"], leiras: 'Bobby Garfield felnőttként visszatér szülővárosába, legjobb barátja halála után. Az emlékek óhatatlanul számvetésre késztetik Bobby-t. Tízéves korában két jóbarátja volt, akivel mindent megosztott: Carol és Sully. Ráadásul Carollal titkon csókkal pecsételték meg barátságukat. Bobby édesanyja megkeseredett élvhajhász asszony, aki önző módon viselkedett fiával. Egy napon belép életükbe és végleg megváltoztatja azt Ted Brautigan, egy előkelő idegen a városban. Bobby hamar megtalálja a hangot Teddel, aki végre egyenrangúként szól hozzá, és megosztja vele néhány természetfeletti képessége titkát. Egy nyáron át tartott barátságuk, mígnem Tedért eljöttek azok az emberek, akiktől annyira óvta ifjú barátját.'},
-
-
-]
+{cim: "CsakmertEzKell"}];
 
 var FilterMegjelenit = false;
 var div = document.getElementById("filmek");var keres = [];var nemkeres = [];
