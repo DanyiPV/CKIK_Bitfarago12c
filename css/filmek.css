@@ -260,6 +260,7 @@ body{
     margin-top: .5vw;
     border-radius: .4vw;
     padding-bottom: .8vw;
+    background-color: rgba(128, 128, 128, 0.7);
 }
 
 .column{
@@ -278,11 +279,23 @@ body{
     border: 2px solid black;
     transition: .6s;
     margin: .5vw;
+    border-radius: .4vw;
+    background-image: linear-gradient(to bottom right, rgba(170, 170, 170), rgba(155, 230, 255));
 }
 
 .RowIMG{
     display: flex;
     transition: .6s;
+    justify-content: space-between;
+}
+
+.RowIMG div{
+    width: 100%;
+    margin-top: 1.5vw;
+}
+
+.RowIMGBelso div{
+    height: 50%;
 }
 
 .RowIMG img{
@@ -297,8 +310,10 @@ body{
     width: 100%;
     text-align: center;
     font-size: 1.3vw;
-    margin-left: 1vw;
+    margin-right: .5vw;
     transition: .6s;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
 }
 
 .RowH1 h1{
@@ -306,6 +321,27 @@ body{
     margin: .5vw;
     transition: .6s;
     font-size: 1.2vw;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+
+.BovebbenButton{
+    width: 8vw;
+    position: relative;
+    display: block;
+    margin: auto;
+    background-color: gray;
+    border-radius: .4vw;
+    border: 2px solid white;
+    color: white;
+    height: 3vw;
+    cursor: pointer;
+    transition: .6s;
+}
+
+.BovebbenButton:hover{
+    box-shadow: 0 0 10px 0 rgb(0, 140, 255) inset, 0 0 10px 2px rgb(0, 140, 255);
+    background-color: rgb(63, 63, 63);
 }
 
 /*---------Body---------*/

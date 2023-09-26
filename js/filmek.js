@@ -51,8 +51,13 @@ function betolt(){
             '<div class="row" id="row">'+
             '<div class="RowIMG">'+
             '<img src="'+filmek[count].img+'" alt="">'+
+            '<div class="RowIMGBelso">'+
             '<div>'+
             '<h2>'+filmek[count].data.join('</br>')+'</h2>'+
+            '</div>'+
+            '<div>'+
+            '<input type="button" value="Bővebben" class="BovebbenButton">'+
+            '</div>'+
             '</div>'+
             '</div>'+
             '<div class="RowH1">'+
