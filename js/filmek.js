@@ -82,7 +82,7 @@ function betolt(){
                 filmek[count].img+
                 '" alt=""><div class="RowIMGBelso"><div><h2>'+
                 filmek[count].data.join('</br>')+
-                '</h2></div><div><input type="button" value="Bővebben" class="BovebbenButton"></div></div></div><div class="RowH1"><h1>'+
+                '</h2></div><div><input type="button" value="Bővebben" id='+count+' onclick=FilmReszlet(this.id) class="BovebbenButton"></div></div></div><div class="RowH1"><h1>'+
                 filmek[count].cim+
                 '</h1></div></div>'; 
             index++;
@@ -193,4 +193,40 @@ function RemoveClass(){
 function SearchClassRemove(){
     document.getElementById("SearchInput").classList = "SearchInput";
 }
+
+function FilmReszlet(num){
+    document.getElementById('CloseButtonDiv').innerHTML = "<p>"+filmek[num].cim+"</p>";
+    document.getElementById('BemutatkozasIMG').src = filmek[num].img;
+    document.getElementById('BemutatkozasP').innerHTML = "<p>"+filmek[num].leiras+"</p>";
+    document.getElementById('BemutatkozasIMG').src = filmek[num].img;
+    document.getElementById('BlackBackground').classList = 'BlackBackground BackMegjelen';
+    document.getElementById('Bemutatkozas').classList = "Bemutatkozas BemutatkozasMegjelen";
+    setTimeout(TobbiMegjelenites,1000);
+}
+
+function TobbiMegjelenites(){
+    document.getElementById('CloseButton').classList = "CloseButton Megjelenites";
+    document.getElementById('BemutatkozasIMG').classList = "BemutatkozasIMG Megjelenites";
+    document.getElementById('BemutatkozasP').classList = "BemutatkozasP Megjelenites";
+}
+
+function Bezar(){
+    document.getElementById('CloseButton').classList = "CloseButton Eltuntetes";
+    document.getElementById('BemutatkozasIMG').classList = "BemutatkozasIMG Eltuntetes";
+    document.getElementById('BemutatkozasP').classList = "BemutatkozasP Eltuntetes";
+    setTimeout(MindenEltuntet,1000);
+}
+
+function MindenEltuntet(){
+    document.getElementById('Bemutatkozas').classList = "Bemutatkozas Megjelen BemutatkozasEluntet";
+    setTimeout(BezarEluntet,700);
+    document.getElementById('BlackBackground').classList = 'BlackBackground BackMegjelen BackEluntet';
+}
+
+function BezarEluntet(){
+    document.getElementById('Bemutatkozas').classList = "Bemutatkozas";
+    document.getElementById('BlackBackground').classList = 'BlackBackground';
+}
+
+
 betolt();

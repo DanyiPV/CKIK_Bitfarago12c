@@ -7,6 +7,16 @@
     <title>Bitfaragó | Filmek</title>
 </head>
 <body>
+    <div class="Bemutatkozas" id="Bemutatkozas">
+        <div class="CloseButton" id="CloseButton">
+            <div id="CloseButtonDiv"></div>
+            <img src="Photos/close.png" alt="close.png" onclick="Bezar()">
+        </div>
+        <div class="BemutatkozasDiv" id="BemutatkozasDiv">
+            <img id="BemutatkozasIMG" class="BemutatkozasIMG" src="" alt="">
+            <div id="BemutatkozasP" class="BemutatkozasP"></div>
+        </div>
+    </div>
     <div id="FilterOpen" class="FilterOpen">
         <div class="FilterColumn">
             <input type="button" value="Keres" id="Akció" class="Keres" onclick="Keres(this)">
@@ -94,13 +104,14 @@
                 <img src="Photos/search.png" alt="" onclick="SearchBarShow()">
             </div>
             <div class="SearchInput">
-                <input type="text" name="search" id="SearchInput" class="SearchInput" placeholder="Keresés" onkeyup="betolt()" onclick="SearchBarShow()">
+                <input type="text" name="search" id="SearchInput" class="SearchInput" placeholder="Keresés" onclick="SearchBarShow()">
             </div>
         </div>
     </div>
     <div class="Container" id="filmek">
         
     </div>
+    <div class="BlackBackground" id="BlackBackground" onclick="Bezar()"></div>
 </body>
 <script src="js/filmek.js"></script>
 </html>

@@ -170,6 +170,7 @@ body{
 
 .BemutatkozasIMG{
     width: 23vw;
+    height: 30vw;
     margin-top: .7vw;
     border-radius: .5vw;
     position: absolute;
@@ -271,7 +272,7 @@ body{
 
 @keyframes BemutatkozasMegjelen {
     from{width: 0;height: 0; z-index: -1;}
-    to{width: 45vw;height: 45vw; z-index: 3;}
+    to{width: 45vw;height: 40vw; z-index: 3;}
 }
 
 @keyframes BackMegjelen {
@@ -347,28 +348,39 @@ body{
     margin-top: 8vw;
 }
 
+.Pictures img{
+    height: 19vw;
+}
+
 .Pictures div{
     height: 20vw;
     width: 25vw;
 }
-
+.PreviousPic{
+    padding-top: 3vw;
+}
 .PreviousPic img{
     transform: perspective(40vw) rotateY(-40deg);
     width: 100%;
     border: 2px solid black;
     opacity: .6;
+    height: 11vw;
 }
-
+.NextPic{
+    padding-top: 3vw;
+}
 .NextPic img{
     transform: perspective(40vw) rotateY(40deg);
     width: 100%;
     border: 2px solid black;
     opacity: .6;
+    height: 11vw;
 }
 
 .CurrentPic img{
     width: 100%;
     border: 2px solid black;
+    height: 17vw;
 }
 
 #ElozoButton, #KovetkezoButton{

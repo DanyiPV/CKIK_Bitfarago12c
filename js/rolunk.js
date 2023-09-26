@@ -6,11 +6,11 @@ var Bemutatkozasok = [{
     nev: "Kósik János",
     href: "location.href='https://www.facebook.com/janos.kosik.9277';",
     img: "Photos/KJani.png",
-    szoveg: "Jani szöveges cuccai"},{
+    szoveg: "Nevem Kósik János 17, lassan 18 éves Ceglédi lakos vagyok Ceglédi Közgáz diákja vagyok, a 12/c osztályt boldogítom, szabadidőmben ménesek helyett autót hajtok barátokkal (csak az 1.8t)"},{
     nev: "Orosz Ádám",
     href: "location.href='https://www.facebook.com/oroszadam0726';",
     img: "Photos/OAdam.jpg",
-    szoveg: "Orosz Ádámnak hívnak 18 éves vagyok 85kg karomátmérője 42,5cm (bedurranva), hobbim az autózás, a Ceglédi Közgazdasági és Informatikai Technikumban tanulok a 12.C osztályban."},{
+    szoveg: "Orosz Ádámnak hívnak 18 éves vagyok 85kg karom átmérője 42,5cm (bedurranva), hobbim az autózás, a Ceglédi Közgazdasági és Informatikai Technikumban tanulok a 12.C osztályban."},{
     nev: "Pintea Dániel",
     href: "location.href='https://www.facebook.com/pintea.danielpv/';", 
     img: "Photos/PDani.png",
