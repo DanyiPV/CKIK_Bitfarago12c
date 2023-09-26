@@ -7,7 +7,7 @@ const filmek= [
 
 {cim: "Terminátor 2. - Az ítélet napja",img: "Photos/film5.jpg",data: ["Akció"]},
 {cim: "A keresztapa",img: "Photos/film6.jpg",data: ["Akció","Dráma"]},
-{cim: "Vissza a jövőbe",img: "Photos/film7.jpg",data: ["fantasy"]},
+{cim: "Vissza a jövőbe",img: "Photos/film7.jpg",data: ["Fantasy"]},
 {cim: "Szerelmünk lapjai",img: "Photos/film8.jpg",data: ["Romantikus"]},
 
 {cim: "Elrabolva",img: "Photos/film9.jpg",data: ["Akció"]},//

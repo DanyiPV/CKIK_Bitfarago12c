@@ -5,11 +5,11 @@ var Days = ["MON","TUE","WED","TRU","FRI","SAT","SUN"];
 var Bemutatkozasok = [{
     nev: "Kósik János",
     href: "location.href='https://www.facebook.com/janos.kosik.9277';",
-    img: "Photos/random1.jpg",
+    img: "Photos/KJani.png",
     szoveg: "Jani szöveges cuccai"},{
     nev: "Orosz Ádám",
     href: "location.href='https://www.facebook.com/oroszadam0726';",
-    img: "Photos/random1.jpg",
+    img: "Photos/KJani.png",
     szoveg: "Ádám szöveges cuccai"},{
     nev: "Pintea Dániel",
     href: "location.href='https://www.facebook.com/pintea.danielpv/';", 
