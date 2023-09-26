@@ -55,18 +55,39 @@ const filmek= [
 {cim: "A Thomas Crown ügy",img: "Photos/film43.jpg",data: ["Krimi","Romantikus","Thriller"], leiras: 'Thomas Crownt a saját képességei tették milliomossá, mindent megvehet, amit akar, és a nők nem tudnak ellenállni neki. De vannak dolgok, amelyeket nem adnak pénzért. Thomas Crown számára már semmi sem jelent kihívást. Amikor a világ egyik leghíresebb múzeumában megszólal a riasztó, és valaki kisétál az épületből Monet egyik felbecsülhetetlen értékű festményével, Crown az utolsó, akit a New York-i rendőrség gyanúsítana. De egyvalaki mégis gyanúsítja: Catherine Banning, a briliáns nyomozónő, akit arra béreltek fel, hogy visszaszerezze a festményt - bármi áron. Catherine legalább annyira szereti az üldözést, mint a férfi, és beleveti magát a játékba. Crown megtalálta a kihívást. Mindketten a játékért élnek, de csak egyikük nyerhet.'},
 {cim: "Skiptrace - A zűrös páros",img: "Photos/film44.jpg",data: ["Akció","Kaland","Vígjáték"], leiras: 'Bennie Chan hongkongi nyomozó nagyon szeretné elkapni a kínai gengszterfőnököt, Victor Wongot. Amikor keresztlánya is belekeveredik a maffia ügyeibe, Bennie Chan szövetkezik azzal az amerikai szerencsejátékossal, aki miatt ez megtörténhetett. Együtt készülnek leszámolni a hírhedt maffiafőnökkel.'},
 
-{cim: "ehh"}
-
-
-
 ];
 
 var FilterMegjelenit = false;
-var div = document.getElementById("filmek");var keres = [];var nemkeres = [];
+var div = document.getElementById("filmek");var keres = [];var nemkeres = [];var filmekdb = filmek.length;
 function betolt(){
-    div.innerHTML = "";var index = 0;var count = 0;var eindex = 0;var tmp = document.createElement("div");
-    while(count < filmek.length){
+    div.innerHTML = "";var index = 0;var count = 0;var eindex = 0;var tmp = document.createElement("div");var kinput = document.getElementById("SearchInput").value;
+    while(count < filmekdb){
         var szuresbool = false;
+        if (kinput != "" && !filmek[count].cim.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '').includes(kinput.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, ''))) {
+            szuresbool = true;
+        }else
+            if (keres.length !=0 || nemkeres != 0 ) {
+                keres.forEach(element => {
+                    if (filmek[count].data.includes(element) == false) {
+                        szuresbool = true;}
+                });
+                nemkeres.forEach(element => {
+                    if (filmek[count].data.includes(element)) {
+                        szuresbool = true;}
+                });
+        }
+        if (!szuresbool) {
+            tmp.innerHTML +=
+                '<div class="row" id="row"><div class="RowIMG">'+'<img src="'+
+                filmek[count].img+
+                '" alt=""><div class="RowIMGBelso"><div><h2>'+
+                filmek[count].data.join('</br>')+
+                '</h2></div><div><input type="button" value="Bővebben" class="BovebbenButton"></div></div></div><div class="RowH1"><h1>'+
+                filmek[count].cim+
+                '</h1></div></div>'; 
+            index++;
+        }
+        count++;
         if (index%4 == 0) {
             if(index != 0 && index != eindex){
                 eindex = index;
@@ -75,40 +96,6 @@ function betolt(){
                 tmp = document.createElement("div"); 
             }
         }
-        if (keres.length !=0) {
-            keres.forEach(element => {
-                if (filmek[count].data.includes(element) == false) {
-                    szuresbool = true;}
-            });
-        }
-        if (nemkeres != 0 ) {
-            nemkeres.forEach(element => {
-                if (filmek[count].data.includes(element)) {
-                    szuresbool = true;}
-            });
-        }
-        if (!szuresbool) {
-            console.log(filmek[count].data,nemkeres,keres,index,count,szuresbool,4,tmp);
-            tmp.innerHTML +=
-            '<div class="row" id="row">'+
-            '<div class="RowIMG">'+
-            '<img src="'+filmek[count].img+'" alt="">'+
-            '<div class="RowIMGBelso">'+
-            '<div>'+
-            '<h2>'+filmek[count].data.join('</br>')+'</h2>'+
-            '</div>'+
-            '<div>'+
-            '<input type="button" value="Bővebben" class="BovebbenButton">'+
-            '</div>'+
-            '</div>'+
-            '</div>'+
-            '<div class="RowH1">'+
-            '<h1>'+filmek[count].cim+'</h1>'+
-            '</div>'+
-            '</div>'; 
-            index++;
-        }
-        count++;
     }
     if(index%4 !=0){
         tmp.className = "column";

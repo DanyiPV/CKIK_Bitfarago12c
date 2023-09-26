@@ -9,8 +9,8 @@ var Bemutatkozasok = [{
     szoveg: "Jani szöveges cuccai"},{
     nev: "Orosz Ádám",
     href: "location.href='https://www.facebook.com/oroszadam0726';",
-    img: "Photos/KJani.png",
-    szoveg: "Ádám szöveges cuccai"},{
+    img: "Photos/OAdam.jpg",
+    szoveg: "Orosz Ádámnak hívnak 18 éves vagyok 85kg karomátmérője 42,5cm (bedurranva), hobbim az autózás, a Ceglédi Közgazdasági és Informatikai Technikumban tanulok a 12.C osztályban."},{
     nev: "Pintea Dániel",
     href: "location.href='https://www.facebook.com/pintea.danielpv/';", 
     img: "Photos/PDani.png",
