@@ -29,7 +29,7 @@ function TimeLoop(){
     if(minutes.toString().length == 1){
         minutes = '0'+minutes;
     }
-    document.getElementById('ora').innerHTML = "<p>"+Days[day]+" - "+hours+":"+minutes+"</p>";
+    document.getElementById('ora').innerHTML = "<p>"+Days[day-1]+" - "+hours+":"+minutes+"</p>";
 }
 //---
 

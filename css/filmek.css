@@ -191,8 +191,6 @@ body{
     color: white;
     position: relative;
     transition: 2s;
-    
-
     opacity: 0;
 }
 
@@ -320,9 +318,10 @@ body{
 
 .RowH1 h1{
     width: 100%;
-    margin: .5vw;
+    margin-left: .2vw;
+    margin-top: -.3vw;
     transition: .6s;
-    font-size: 1.1vw;
+    font-size: 1.05vw;
     letter-spacing: 0.1em;
     text-transform: uppercase;
 }
