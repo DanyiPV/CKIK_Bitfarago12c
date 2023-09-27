@@ -48,12 +48,14 @@ function TobbiMegjelenites(){
     document.getElementById('CloseButton').classList = "CloseButton Megjelenites";
     document.getElementById('BemutatkozasIMG').classList = "BemutatkozasIMG Megjelenites";
     document.getElementById('BemutatkozasP').classList = "BemutatkozasP Megjelenites";
+    document.getElementById('Bemutatkozas').style.zIndex = 3;
 }
 
 function Bezar(){
     document.getElementById('CloseButton').classList = "CloseButton Eltuntetes";
     document.getElementById('BemutatkozasIMG').classList = "BemutatkozasIMG Eltuntetes";
     document.getElementById('BemutatkozasP').classList = "BemutatkozasP Eltuntetes";
+    document.getElementById('Bemutatkozas').style.zIndex = -1;
     setTimeout(MindenEltuntet,500);
 }
 
