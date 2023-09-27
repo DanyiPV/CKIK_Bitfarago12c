@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/filmek.css">
+    <title>Bitfaragó | Filmek</title>
+</head>
+<body>
+    <div class="Bemutatkozas" id="Bemutatkozas">
+        <div class="CloseButton" id="CloseButton">
+            <div id="CloseButtonDiv"></div>
+            <img src="Photos/close.png" alt="close.png" onclick="Bezar()">
+        </div>
+        <div class="BemutatkozasDiv" id="BemutatkozasDiv">
+            <img id="BemutatkozasIMG" class="BemutatkozasIMG" src="" alt="">
+            <div id="BemutatkozasP" class="BemutatkozasP"></div>
+        </div>
+    </div>
+    <div id="FilterOpen" class="FilterOpen">
+        <div class="FilterColumn">
+            <input type="button" value="Keres" id="Akció" class="Keres" onclick="Keres(this)">
+            <h3 id="Akcióh">Akció</h3>
+            <input type="button" value="Nem keres" id="Akció" class="NemKeres" onclick="NemKeres(this)">
+        </div>
+        <div class="FilterColumn">
+            <input type="button" value="Keres" id="Dráma" class="Keres" onclick="Keres(this)">
+            <h3 id="Drámah">Dráma</h3>
+            <input type="button" value="Nem keres" id="Dráma" class="NemKeres" onclick="NemKeres(this)">
+        </div>
+        <div class="FilterColumn">
+            <input type="button" value="Keres" id="Fantasy" class="Keres" onclick="Keres(this)">
+            <h3 id="Fantasyh">Fantasy</h3>
+            <input type="button" value="Nem keres" id="Fantasy" class="NemKeres" onclick="NemKeres(this)">
+        </div>
+        <div class="FilterColumn">
+            <input type="button" value="Keres" id="Romantikus" class="Keres" onclick="Keres(this)">
+            <h3 id="Romantikush">Romantikus</h3>
+            <input type="button" value="Nem keres" id="Romantikus" class="NemKeres" onclick="NemKeres(this)">
+        </div>
+        <div class="FilterColumn">
+            <input type="button" value="Keres" id="Krimi" class="Keres" onclick="Keres(this)">
+            <h3 id="Krimih">Krimi</h3>
+            <input type="button" value="Nem keres" id="Krimi" class="NemKeres" onclick="NemKeres(this)">
+        </div>
+        <div class="FilterColumn">
+            <input type="button" value="Keres" id="Vígjáték" class="Keres" onclick="Keres(this)">
+            <h3 id="Vígjátékh">Vígjáték</h3>
+            <input type="button" value="Nem keres" id="Vígjáték" class="NemKeres" onclick="NemKeres(this)">
+        </div>
+        <div class="FilterColumn">
+            <input type="button" value="Keres" id="Sci-fi" class="Keres" onclick="Keres(this)">
+            <h3 id="Sci-fih">Sci-fi</h3>
+            <input type="button" value="Nem keres" id="Sci-fi" class="NemKeres" onclick="NemKeres(this)">
+        </div>
+        <div class="FilterColumn">
+            <input type="button" value="Keres" id="Kaland" class="Keres" onclick="Keres(this)">
+            <h3 id="Kalandh">Kaland</h3>
+            <input type="button" value="Nem keres" id="Kaland" class="NemKeres" onclick="NemKeres(this)">
+        </div>
+        <div class="FilterColumn">
+            <input type="button" value="Keres" id="Thriller" class="Keres" onclick="Keres(this)">
+            <h3 id="Thrillerh">Thriller</h3>
+            <input type="button" value="Nem keres" id="Thriller" class="NemKeres" onclick="NemKeres(this)">
+        </div>
+        <div class="FilterColumn">
+            <input type="button" value="Keres" id="Horror" class="Keres" onclick="Keres(this)">
+            <h3 id="Horrorh">Horror</h3>
+            <input type="button" value="Nem keres" id="Horror" class="NemKeres" onclick="NemKeres(this)">
+        </div>
+        <div class="FilterColumn">
+            <input type="button" value="Keres" id="Rejtély" class="Keres" onclick="Keres(this)">
+            <h3 id="Rejtélyh">Rejtély</h3>
+            <input type="button" value="Nem keres" id="Rejtély" class="NemKeres" onclick="NemKeres(this)">
+        </div>
+        <div class="FilterColumn">
+            <input type="button" value="Keres" id="Dokumentum" class="Keres" onclick="Keres(this)">
+            <h3 id="Dokumentumh">Dokumentum</h3>
+            <input type="button" value="Nem keres" id="Dokumentum" class="NemKeres" onclick="NemKeres(this)">
+        </div>
+        <div class="FilterColumn">
+            <input type="button" value="Keres" id="Életrajzi" class="Keres" onclick="Keres(this)">
+            <h3 id="Életrajzih">Életrajzi</h3>
+            <input type="button" value="Nem keres" id="Életrajzi" class="NemKeres" onclick="NemKeres(this)">
+        </div>
+    </div>
+    <div class="NavBar">
+        <div id="VisszaButton" class="VisszaButton">
+            <div class="VisszaButtonIMG">
+                <a href="index.html"><img src="Photos/arrow.png" ></a>
+            </div>
+            <div class="VisszaButtonP">
+                <p>Vissza</p>
+            </div>
+        </div>
+        <div class="H1CLass">
+            <h1>Film ajánló</h1>
+        </div>
+        <div class="SearchBar">
+            <div class="FilterDiv">
+                <img src="Photos/filter.png"  onclick="Filter()">
+            </div>
+            <div class="SearchIMG">
+                <img src="Photos/search.png" onclick="SearchBarShow()">
+            </div>
+            <div class="SearchInput">
+                <input type="text" name="search" id="SearchInput" class="SearchInput"onkeyup="betolt()"  placeholder="Keresés" onclick="SearchBarShow()">
+            </div>
+        </div>
+    </div>
+    <div class="Container" id="filmek">
+        
+    </div>
+    <div class="BlackBackground" id="BlackBackground" onclick="Bezar()"></div>
+</body>
+<script src="js/filmek.js"></script>
+</html>

@@ -1,0 +1,494 @@
+body{
+    background-image: linear-gradient(to bottom right, rgba(170, 170, 170, 0.4), rgba(155, 230, 255, 0.4));
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/*---------Navbar---------*/
+.FilterOpen{
+    width: 20vw;
+    height: 15vw;
+    background-color: gray;
+    border: 2px solid white;
+    border-radius: .7vw;
+    position: absolute;
+    right: 19.5vw;
+    top: 1.35vw;
+    padding: .5vw;
+    overflow-y: scroll;
+    margin-right: -5vw;
+    opacity: 0;
+    z-index: -1;
+}
+
+.FilterColumn{
+    display: flex;
+    width: 100%;
+    margin: .5vw 0;
+}
+
+.FilterColumn h3{
+    text-align: center;
+    color: white;
+    margin: .5vw auto;
+    font-size: 1vw;
+    opacity: 0;
+}
+
+.FilterColumn input{
+    width: 5vw;
+    border-radius: .4vw;
+    background-color: gray;
+    color: white;
+    border: 2px solid white;
+    transition: .6s;
+    cursor: pointer;
+    opacity: 0;
+    font-size: .7vw;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+
+.NemKeres{
+    width: 6vw !important;
+}
+
+.FilterMegjelenites{
+    animation: FilterMegjelenites .6s forwards;
+}
+
+.FilterEltuntetes{
+    animation: FilterEltuntetes .6s forwards;
+}
+
+.Megjelenites{
+    animation: Megjelenites .6s forwards;
+}
+
+.Eltuntetes{
+    animation: Eltuntetes .6s forwards;
+}
+
+.Keres:hover{
+    box-shadow: 0 0 10px 0 lime inset, 0 0 10px 2px lime;
+    background-color: rgb(61, 61, 61);
+}
+
+.NemKeres:hover{
+    box-shadow: 0 0 10px 0 red inset, 0 0 10px 2px red;
+    background-color: rgb(61, 61, 61);
+}
+
+.NavBar{
+    width: 97vw;
+    height: 5vw;
+    border: 2px solid;
+    border-radius: .4vw;
+    margin: auto;
+    /*box-shadow: 0 0 15px 30px red inset, 0 0 20px 5px red;*/
+    background-image: linear-gradient(to top left, gray 30%, rgb(0, 191, 255));
+    transition: .6s;
+    justify-content: space-between;
+    display: flex;
+}
+
+.VisszaButton{
+    display: flex;
+}
+
+.VisszaButtonIMG img{
+    width: 4vw;
+    margin-top: .5vw;
+    transition: .6s;
+    position: relative;
+    z-index: 1;
+}
+
+.VisszaButtonP p{
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    font-size: 1.5vw;
+    margin-left: -5vw;
+    opacity: 0;
+    margin-top: 1.5vw;
+    transition: .6s;
+}
+
+.VisszaButtonIMG:hover + .VisszaButtonP p{
+    opacity: 1;
+    margin-left: 0vw;
+}
+
+.SearchBar{
+    border: 2px solid white;
+    width: 17vw;
+    height: 3vw;
+    margin-top: .8vw;
+    margin-right: 1vw;
+    border-radius: .7vw;
+    display: flex;
+}
+
+.H1CLass h1{
+    color: white;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    font-size: 2vw;
+    transition: .6s;
+}
+
+.FilterDiv{
+    border-right: 2px solid white;
+    width: 3vw;
+    height: 3vw;
+    transition: .6s;
+}
+
+.FilterDiv img{
+    width: 2.5vw;
+    cursor: pointer;
+    padding: .25vw;
+    border-top-left-radius: .7vw;
+    border-bottom-left-radius: .7vw;
+    transition: .6s;
+}
+
+.FilterDiv img:hover{
+    background-color: rgba(92, 92, 92, 0.7);
+}
+
+.SearchIMG img{
+    width: 2vw;
+    padding: .2vw;
+    border-radius: .7vw;
+    cursor: pointer;
+    transition: .6s;
+    margin-left: .3vw;
+    margin-top: .3vw;
+}
+
+.SearchIMG img:hover{
+    background-color: rgba(92, 92, 92, 0.7);
+}
+
+.SearchInput{
+    margin: auto;
+    width: 12vw;
+    margin-left: .4vw;
+    position: relative;
+}
+
+.SearchInput input{
+    float: left;
+    width: 1vw;
+    height: 1.5vw;
+    border-radius: .7vw;
+    background-color: rgba(92, 92, 92, 0.7);
+    border: 1px solid white;
+    color: white;
+    position: relative;
+    transition: 2s;
+    opacity: 0;
+}
+
+.Search7st input[type=text]{
+    padding-left: .7vw;
+}
+
+.SearchInput input::placeholder{
+    color: white;
+}
+
+.SearchInput input[type=text]:focus{
+    border: 1px solid white !important;
+}
+
+.SearchIMG:hover + .SearchInput input{
+    width: 9vw;
+    opacity: 1;
+}
+
+.SearchShow{
+    animation: SearchShow .30s forwards;
+}
+
+.SearchHide{
+    animation: SearchHide 2s forwards;
+}
+
+@keyframes SearchShow {
+    100%{width: 9vw; opacity: 1;}
+}
+
+@keyframes SearchHide{
+    from{width: 9vw; opacity: 1;}
+    to{width: 1vw; opacity: 0;}
+}
+
+@keyframes Megjelenites{
+    from{opacity: 0;}
+    to{opacity: 1;}
+}
+
+@keyframes Eltuntetes{
+    from{opacity: 1;}
+    to{opacity: 0;}
+}
+
+@keyframes FilterMegjelenites{
+    from{margin-right: -5vw; opacity: 0; z-index: -1;}
+    to{margin-right: 0vw; opacity: 1; z-index: 2;}
+}
+
+@keyframes FilterEltuntetes{
+    from{margin-right: 0vw; opacity: 1; z-index: 2;}
+    to{margin-right: -5vw; opacity: 0; z-index: -1;}
+}
+
+/*---------Navbar---------*/
+
+/*---------Body---------*/
+
+.Container{
+    border: 2px solid black;
+    width: 97vw;
+    height: auto;
+    margin: auto;
+    margin-top: .5vw;
+    border-radius: .4vw;
+    padding-bottom: .8vw;
+    background-color: rgba(128, 128, 128, 0.7);
+}
+
+.column{
+    width: 95vw;
+    height: 19vw;
+    margin: auto;
+    margin-top: .8vw;
+    display: flex;
+    padding-bottom: 1vw;
+    transition: .6s;
+}
+
+.row{
+    width: 25%;
+    height: 100%;
+    border: 2px solid black;
+    transition: .6s;
+    margin: .5vw;
+    border-radius: .4vw;
+    background-image: linear-gradient(to bottom right, rgba(170, 170, 170), rgba(155, 230, 255));
+}
+
+.RowIMG{
+    display: flex;
+    transition: .6s;
+    justify-content: space-between;
+}
+
+.RowIMG div{
+    width: 100%;
+    margin-top: 1.5vw;
+}
+
+.RowIMGBelso div{
+    height: 50%;
+}
+
+.RowIMG img{
+    width: 10vw;
+    margin: .5vw;
+    border: 1px solid black;
+    border-radius: .5vw;
+    transition: .6s;
+}
+
+.RowIMG h2{
+    width: 100%;
+    text-align: center;
+    font-size: 1.3vw;
+    margin-right: .5vw;
+    transition: .6s;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+
+.RowH1 h1{
+    width: 100%;
+    margin-left: .2vw;
+    margin-top: -.3vw;
+    transition: .6s;
+    font-size: 1.05vw;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+
+.BovebbenButton{
+    width: 8vw;
+    position: relative;
+    display: block;
+    margin: auto;
+    background-color: gray;
+    border-radius: .4vw;
+    border: 2px solid white;
+    color: white;
+    height: 3vw;
+    cursor: pointer;
+    transition: .6s;
+}
+
+.BovebbenButton:hover{
+    box-shadow: 0 0 10px 0 rgb(0, 140, 255) inset, 0 0 10px 2px rgb(0, 140, 255);
+    background-color: rgb(63, 63, 63);
+}
+
+/*---------Body---------*/
+
+.BlackBackground{
+    background-color: rgba(0, 0, 0, 0.6);
+    opacity: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.Bemutatkozas{
+    position: fixed;
+    border: 1px solid white;
+    background-image: linear-gradient(to bottom right, rgba(170, 170, 170), rgba(155, 230, 255));
+    z-index: -1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(75, 75, 75);
+    opacity: 0;
+    border-radius: .8vw;
+    padding: .7vw;
+    transition: .6s;
+}
+
+.CloseButton{
+    opacity: 0;
+    width: 45vw;
+    height: 3vw;
+    border-bottom: 2px solid white;
+    display: flex;
+    justify-content: space-between;
+}
+
+.CloseButton p{
+    text-decoration: transparent;
+    transition: .6s;
+    font-size: 2.5vw;
+    margin-top: 1.7vw;
+}
+
+.CloseButton img{
+    width: 1.5vw;
+    position: absolute;
+    right: .7vw;
+    margin-top: -.4vw;
+    transition: .6s;
+    padding: .8vw;
+    border-radius: 1.1vw;
+    cursor: pointer;
+}
+
+.CloseButton img:hover{
+    background-color: rgba(128, 128, 128, 0.6);
+}
+
+#CloseButtonDiv{
+    font-size: 1.7vw;
+    margin-top: -2vw;
+    color: white;
+}
+
+.BemutatkozasDiv{
+    display: flex;
+    padding-top: 2vw;
+}
+
+.BemutatkozasIMG{
+    width: 23vw;
+    margin-top: .7vw;
+    border-radius: .5vw;
+    position: absolute;
+    opacity: 0;
+}
+
+.BemutatkozasP{
+    font-size: 1.5vw;
+    margin-left: 24vw;
+    margin-top: -.4vw;
+    text-align: justify;
+    color: white;
+    opacity: 0;
+    overflow: auto;
+    width: 40vw;
+    height: 35vw; 
+    z-index: 3;
+    padding-right: 1vw;
+
+}
+
+.Megjelenites{
+    animation: Megjelenites .6s forwards;
+}
+
+.Eltuntetes{
+    animation: Eltuntetes .6s forwards;
+}
+
+.BemutatkozasMegjelen{
+    opacity: 1;
+    z-index: 2;
+    animation: BemutatkozasMegjelen .6s forwards;
+}
+
+.BackMegjelen{
+    animation: BackMegjelen .6s forwards;
+}
+
+.BemutatkozasEluntet{
+    animation: BemutatkozasEluntet .6s forwards;
+}
+
+.BackEluntet{
+    animation: BackEltuntet .6s forwards;
+}
+
+@keyframes BemutatkozasMegjelen {
+    from{width: 0;height: 0; z-index: -1;}
+    to{width: 45vw;height: 45vw; z-index: 3;}
+}
+@keyframes BemutatkozasP{
+    from{width: 0;height: 0; z-index: -1;}
+    to{width: 45vw;height: 45vw; z-index: 3;}
+}
+
+@keyframes BackMegjelen {
+    from{opacity: 0; z-index: -1;}
+    to{opacity: 1; z-index: 2;}
+}
+
+@keyframes BemutatkozasEluntet {
+    from{width: 45vw;height: 45vw; z-index: 3;}
+    to{width: 0;height: 0; z-index: -1;}
+}
+
+@keyframes BackEltuntet {
+    from{opacity: 1; z-index: 2;}
+    to{opacity: 0; z-index: -1;}
+}
+
+@font-face{
+    font-family:'digital-clock-font';
+    src: url('digital-7.ttf');
+}
