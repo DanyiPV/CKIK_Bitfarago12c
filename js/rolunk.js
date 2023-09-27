@@ -41,7 +41,7 @@ function Bemutatkozas(num){
     document.getElementById('BemutatkozasIMG').src = Bemutatkozasok[num].img;
     document.getElementById('BlackBackground').classList = 'BlackBackground BackMegjelen';
     document.getElementById('Bemutatkozas').classList = "Bemutatkozas BemutatkozasMegjelen";
-    setTimeout(TobbiMegjelenites,1000);
+    setTimeout(TobbiMegjelenites,200);
 }
 
 function TobbiMegjelenites(){
@@ -54,12 +54,12 @@ function Bezar(){
     document.getElementById('CloseButton').classList = "CloseButton Eltuntetes";
     document.getElementById('BemutatkozasIMG').classList = "BemutatkozasIMG Eltuntetes";
     document.getElementById('BemutatkozasP').classList = "BemutatkozasP Eltuntetes";
-    setTimeout(MindenEltuntet,1000);
+    setTimeout(MindenEltuntet,200);
 }
 
 function MindenEltuntet(){
     document.getElementById('Bemutatkozas').classList = "Bemutatkozas Megjelen BemutatkozasEluntet";
-    setTimeout(BezarEluntet,700);
+    setTimeout(BezarEluntet,200);
     document.getElementById('BlackBackground').classList = 'BlackBackground BackMegjelen BackEluntet';
 }
 

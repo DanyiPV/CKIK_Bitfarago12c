@@ -134,14 +134,14 @@ function NemKeres(btn){
 function SearchBarShow(){
     if(document.getElementsByClassName('SearchShow').length == 0){
         document.getElementById("SearchInput").classList += " SearchShow";
-        setTimeout(SearchTime,7000);
+        setTimeout(SearchTime,5000);
     }
 }
 
 function SearchTime(){
     if(document.getElementById('SearchInput').value == ""){
         document.getElementById("SearchInput").classList.add("SearchHide");
-        setTimeout(SearchClassRemove,500);
+        setTimeout(SearchClassRemove,5000);
     }
 }
 
@@ -151,7 +151,7 @@ function Filter(){
     if(FilterMegjelenit == false){
         FilterMegjelenit = true;
         document.getElementById('FilterOpen').classList += " FilterMegjelenites";
-        setTimeout(FilterOpen,600);
+        setTimeout(FilterOpen,200);
     }
     else if(FilterMegjelenit == true){
         FilterMegjelenit = false;
@@ -160,7 +160,7 @@ function Filter(){
             NemKeresButtonok[i].classList += " Eltuntetes";
             document.getElementById(KeresButtonok[i].id+"h").classList += " Eltuntetes";
         }
-        setTimeout(FilterClose,600);
+        setTimeout(FilterClose,200);
     }
 }
 
@@ -201,7 +201,7 @@ function FilmReszlet(num){
     document.getElementById('BemutatkozasIMG').src = filmek[num].img;
     document.getElementById('BlackBackground').classList = 'BlackBackground BackMegjelen';
     document.getElementById('Bemutatkozas').classList = "Bemutatkozas BemutatkozasMegjelen";
-    setTimeout(TobbiMegjelenites,1000);
+    setTimeout(TobbiMegjelenites,200);
 }
 
 function TobbiMegjelenites(){
@@ -214,12 +214,12 @@ function Bezar(){
     document.getElementById('CloseButton').classList = "CloseButton Eltuntetes";
     document.getElementById('BemutatkozasIMG').classList = "BemutatkozasIMG Eltuntetes";
     document.getElementById('BemutatkozasP').classList = "BemutatkozasP Eltuntetes";
-    setTimeout(MindenEltuntet,1000);
+    setTimeout(MindenEltuntet,200);
 }
 
 function MindenEltuntet(){
     document.getElementById('Bemutatkozas').classList = "Bemutatkozas Megjelen BemutatkozasEluntet";
-    setTimeout(BezarEluntet,700);
+    setTimeout(BezarEluntet,200);
     document.getElementById('BlackBackground').classList = 'BlackBackground BackMegjelen BackEluntet';
 }
 
