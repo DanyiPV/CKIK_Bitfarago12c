@@ -107,7 +107,7 @@ body{
 }
 
 .Bemutatkozas{
-    position: absolute;
+    position: fixed;
     border: 1px solid white;
     background-image: linear-gradient(to top right, blue 20%, lightblue);
     z-index: -1;

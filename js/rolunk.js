@@ -5,7 +5,7 @@ var Days = ["MON","TUE","WED","TRU","FRI","SAT","SUN"];
 var Bemutatkozasok = [{
     nev: "Kósik János",
     href: "location.href='https://www.facebook.com/janos.kosik.9277';",
-    img: "Photos/KJani.png",
+    img: "Photos/KJani.jpg",
     szoveg: "Nevem Kósik János 17, lassan 18 éves Ceglédi lakos vagyok Ceglédi Közgáz diákja vagyok, a 12/c osztályt boldogítom, szabadidőmben ménesek helyett autót hajtok barátokkal (csak az 1.8t)"},{
     nev: "Orosz Ádám",
     href: "location.href='https://www.facebook.com/oroszadam0726';",
@@ -13,7 +13,7 @@ var Bemutatkozasok = [{
     szoveg: "Orosz Ádámnak hívnak 18 éves vagyok 85kg karom átmérője 42,5cm (bedurranva), hobbim az autózás, a Ceglédi Közgazdasági és Informatikai Technikumban tanulok a 12.C osztályban."},{
     nev: "Pintea Dániel",
     href: "location.href='https://www.facebook.com/pintea.danielpv/';", 
-    img: "Photos/PDani.png",
+    img: "Photos/PDani.jpg",
     szoveg: 'Pintea Dániel vagyok, a Ceglédi Közgáz 12-es tanulója. A programozás egyben a "munkám" és a hobbim is, szeretem csinálni amikor tudom. Persze van más hobbim is ezek mellett, például az autózás vagy a számítogépek.'}
 ];
 
@@ -41,7 +41,7 @@ function Bemutatkozas(num){
     document.getElementById('BemutatkozasIMG').src = Bemutatkozasok[num].img;
     document.getElementById('BlackBackground').classList = 'BlackBackground BackMegjelen';
     document.getElementById('Bemutatkozas').classList = "Bemutatkozas BemutatkozasMegjelen";
-    setTimeout(TobbiMegjelenites,200);
+    setTimeout(TobbiMegjelenites,500);
 }
 
 function TobbiMegjelenites(){
@@ -54,12 +54,12 @@ function Bezar(){
     document.getElementById('CloseButton').classList = "CloseButton Eltuntetes";
     document.getElementById('BemutatkozasIMG').classList = "BemutatkozasIMG Eltuntetes";
     document.getElementById('BemutatkozasP').classList = "BemutatkozasP Eltuntetes";
-    setTimeout(MindenEltuntet,200);
+    setTimeout(MindenEltuntet,500);
 }
 
 function MindenEltuntet(){
     document.getElementById('Bemutatkozas').classList = "Bemutatkozas Megjelen BemutatkozasEluntet";
-    setTimeout(BezarEluntet,200);
+    setTimeout(BezarEluntet,500);
     document.getElementById('BlackBackground').classList = 'BlackBackground BackMegjelen BackEluntet';
 }
 
